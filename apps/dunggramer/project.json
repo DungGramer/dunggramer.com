@@ -1,0 +1,89 @@
+{
+  "name": "dunggramer",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/dunggramer/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/webpack:webpack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "compiler": "babel",
+        "outputPath": "dist/apps/dunggramer",
+        "index": "apps/dunggramer/src/index.html",
+        "baseHref": "/",
+        "main": "apps/dunggramer/src/main.tsx",
+        "tsConfig": "apps/dunggramer/tsconfig.app.json",
+        "assets": [
+          "apps/dunggramer/src/favicon.ico",
+          "apps/dunggramer/src/assets"
+        ],
+        "styles": ["apps/dunggramer/src/styles.scss"],
+        "scripts": [],
+        "webpackConfig": "apps/dunggramer/webpack.config.js"
+      },
+      "configurations": {
+        "development": {
+          "extractLicenses": false,
+          "optimization": false,
+          "sourceMap": true,
+          "vendorChunk": true
+        },
+        "production": {
+          "fileReplacements": [
+            {
+              "replace": "apps/dunggramer/src/environments/environment.ts",
+              "with": "apps/dunggramer/src/environments/environment.prod.ts"
+            }
+          ],
+          "optimization": true,
+          "outputHashing": "all",
+          "sourceMap": false,
+          "namedChunks": false,
+          "extractLicenses": true,
+          "vendorChunk": false
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/webpack:dev-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "dunggramer:build",
+        "hmr": true
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "dunggramer:build:development"
+        },
+        "production": {
+          "buildTarget": "dunggramer:build:production",
+          "hmr": false
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/dunggramer/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "apps/dunggramer/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    }
+  },
+  "tags": []
+}
