@@ -6,6 +6,7 @@
     {
       "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
       "rules": {
+        "import/no-webpack-loader-syntax": "off",
         "@nrwl/nx/enforce-module-boundaries": [
           "error",
           {

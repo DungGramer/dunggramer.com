@@ -8,7 +8,7 @@ import {
   UilTimes,
   UilUser,
 } from '@iconscout/react-unicons';
-import './header.scss';
+import './Header.scss';
 import { useState } from 'react';
 
 const Header = () => {

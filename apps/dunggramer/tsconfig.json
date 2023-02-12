@@ -13,7 +13,11 @@
     "skipLibCheck": true,
     "sourceMap": true,
     "strict": true,
-    "noImplicitAny": false
+    "noImplicitAny": false,
+    "paths": {
+      "@/*": ["apps/dunggramer/*"],
+      "@assets/*": ["apps/dunggramer/src/assets/*"]
+    }
   },
   "files": [],
   "include": [],
