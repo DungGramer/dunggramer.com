@@ -4,6 +4,7 @@ import Services from '@/src/app/components/services/Services';
 import Skills from '@/src/app/components/skills/Skills';
 import Header from './components/header';
 import Qualification from '@/src/app/components/qualification/Qualification';
+import Testimonials from '@/src/app/components/Testimonials/Testimonials';
 
 export function App() {
   return (
@@ -15,6 +16,7 @@ export function App() {
         <Skills />
         <Services />
         <Qualification />
+        <Testimonials />
       </main>
     </>
   );
