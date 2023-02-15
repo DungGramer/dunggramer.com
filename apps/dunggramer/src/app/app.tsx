@@ -5,6 +5,7 @@ import Skills from '@/src/app/components/skills/Skills';
 import Header from './components/header';
 import Qualification from '@/src/app/components/qualification/Qualification';
 import Testimonials from '@/src/app/components/Testimonials/Testimonials';
+import Contact from '@/src/app/components/contact/Contact';
 
 export function App() {
   return (
@@ -17,6 +18,7 @@ export function App() {
         <Services />
         <Qualification />
         <Testimonials />
+        <Contact />
       </main>
     </>
   );
