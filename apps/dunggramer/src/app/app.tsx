@@ -6,6 +6,8 @@ import Header from './components/header';
 import Qualification from '@/src/app/components/qualification/Qualification';
 import Testimonials from '@/src/app/components/Testimonials/Testimonials';
 import Contact from '@/src/app/components/contact/Contact';
+import Footer from '@/src/app/components/footer/Footer';
+import ScrollUp from '@/src/app/components/scroll-up/ScrollUp';
 
 export function App() {
   return (
@@ -20,6 +22,8 @@ export function App() {
         <Testimonials />
         <Contact />
       </main>
+      <Footer />
+      <ScrollUp />
     </>
   );
 }
