@@ -10,6 +10,7 @@ import {
 } from '@iconscout/react-unicons';
 import './Header.scss';
 import { useCallback, useState, useEffect } from 'react';
+import Logo from '-!react-svg-loader!@assets/bold.svg';
 import clsx from 'clsx';
 
 const Header = () => {
@@ -32,7 +33,7 @@ const Header = () => {
     <header className="header">
       <nav className="nav container">
         <a href="#home" className="nav__logo">
-          Smith
+          <Logo />
         </a>
 
         <div className={toggle ? 'nav__menu show-menu' : 'nav__menu'}>

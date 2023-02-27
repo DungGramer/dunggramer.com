@@ -2,7 +2,9 @@
   "name": "dunggramer",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "start": "yarn nx serve dunggramer"
+  },
   "private": true,
   "devDependencies": {
     "@babel/preset-react": "^7.14.5",
