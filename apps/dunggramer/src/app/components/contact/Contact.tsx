@@ -75,7 +75,7 @@ const Contact = () => {
               <span className="contact__card-data">DungGramer</span>
 
               <a href="//m.me/DungGramer" className="contact__button">
-                Write me
+                Contact me
                 <i className="bx-bx-right-arrow-alt contact__button-icon" />
               </a>
             </div>

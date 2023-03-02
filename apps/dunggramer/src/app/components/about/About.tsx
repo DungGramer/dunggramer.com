@@ -9,7 +9,7 @@ const About = () => {
       <span className="section__subtitle">My introduction</span>
 
       <div className="about__container container grid">
-        <img src="assets/about.jpg" alt="" className="about__img" />
+        <img src="assets/about.jpeg" alt="" className="about__img" />
 
         <div className="about__data">
           <Info />
@@ -20,7 +20,7 @@ const About = () => {
             projects carried out.
           </p>
 
-          <a href="assets/John-Cv.pdf" className="button button--flex">
+          <a href="//https://cv.dunggramer.com/" className="button button--flex">
             Download CV
             <Files />
           </a>

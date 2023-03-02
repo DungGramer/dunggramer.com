@@ -147,12 +147,15 @@ img {
 
 /*=============== BUTTONS ===============*/
 .button {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: var(--title-color);
   color: var(--container-color);
   padding: 1.25rem 2rem;
   border-radius: 1rem;
   font-weight: var(--font-medium);
+  
 }
 
 .button:hover {
