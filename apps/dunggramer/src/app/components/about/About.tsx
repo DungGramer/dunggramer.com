@@ -20,7 +20,7 @@ const About = () => {
             projects carried out.
           </p>
 
-          <a href="//https://cv.dunggramer.com/" className="button button--flex">
+          <a href="https://cv.dunggramer.com/" className="button button--flex">
             Download CV
             <Files />
           </a>

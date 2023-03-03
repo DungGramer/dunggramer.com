@@ -29,7 +29,7 @@ const Footer = () => {
 
           <div className="footer__social">
             <a
-              href="//facebook.com/DungGramer"
+              href="https://facebook.com/DungGramer"
               className="footer__social-link"
               target="_blank"
               rel="noreferrer"
@@ -37,7 +37,7 @@ const Footer = () => {
               <i className="bx bxl-facebook" />
             </a>
             <a
-              href="//instagram.com/dung.gramer"
+              href="https://instagram.com/dung.gramer"
               className="footer__social-link"
               target="_blank"
               rel="noreferrer"
@@ -45,7 +45,7 @@ const Footer = () => {
               <i className="bx bxl-instagram" />
             </a>
             <a
-              href="//tiktok.com/@dunggramer"
+              href="https://tiktok.com/@dunggramer"
               className="footer__social-link"
               target="_blank"
               rel="noreferrer"

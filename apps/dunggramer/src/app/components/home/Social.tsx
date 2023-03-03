@@ -8,21 +8,21 @@ const Social = () => {
   return (
     <div className="home__social">
       <a
-        href="//github.com/DungGramer"
+        href="https://github.com/DungGramer"
         className="home__social-icon"
         target="_blank" rel="noreferrer"
       >
         <UilGithubAlt />
       </a>
       <a
-        href="//linkedin.com/in/dunggramer"
+        href="https://linkedin.com/in/dunggramer"
         className="home__social-icon"
         target="_blank" rel="noreferrer"
       >
         <UilLinkedinAlt />
       </a>
       <a
-        href="//facebook.com/DungGramer"
+        href="https://facebook.com/DungGramer"
         className="home__social-icon"
         target="_blank" rel="noreferrer"
       >
