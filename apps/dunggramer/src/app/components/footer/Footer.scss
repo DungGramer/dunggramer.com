@@ -1,6 +1,7 @@
 .footer {
   background-color: var(--container-color);
   border-top: 1px solid grba(0, 0, 0, 0.1);
+  isolation: isolate;
 }
 
 .footer__container {

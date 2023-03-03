@@ -3,6 +3,7 @@
   justify-content: center;
   column-gap: 6rem;
   padding-block-end: 3rem;
+  isolation: isolate;
 
   @media screen and (max-width: 992px) {
     column-gap: 3rem;
@@ -134,4 +135,61 @@
 
 .send {
   fill: var(--container-color);
+}
+
+.contact {
+  position: relative;
+}
+
+#hanoi {
+  position: absolute;
+  // z-index: -1;
+  opacity: 0.3;
+  right: 0;
+  height: 100%;
+
+  .cls-1 {
+    fill: #905d29;
+  }
+  .cls-2 {
+    fill: #d3d3d3;
+  }
+  .cls-3 {
+    fill: none;
+    stroke: #905d29;
+    stroke-miterlimit: 10;
+    stroke-width: 5px;
+    fill-rule: evenodd;
+  }
+
+  & + .location {
+    position: absolute;
+    top: 63%;
+    right: 1rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #905d29;
+    opacity: 0;
+    transition: 0.3s;
+
+    // Line 135 deg
+    &::before {
+      content: '';
+      position: absolute;
+      top: -20px;
+      left: 7rem;
+      width: 3rem;
+      height: 1px;
+      background-color: #905d29;
+      transform: rotate(-135deg);
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &:hover + .location {
+    opacity: 1;
+  }
 }

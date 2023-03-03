@@ -1,4 +1,5 @@
 import Send from '-!react-svg-loader!@assets/send.svg';
+import Hanoi from '-!react-svg-loader!@assets/hanoi.svg';
 import { useRef } from 'react';
 import './Contact.scss';
 
@@ -31,6 +32,10 @@ const Contact = () => {
 
   return (
     <section className="contact section" id="contact">
+      <Hanoi />
+      <a className='location' href="https://goo.gl/maps/NWJtXU8ejtcYdm6T7">
+        125D Minh Khai, Hai Bà Trưng, Hà Nội, Việt Nam
+      </a>
       <h2 className="section__title">Get in touch</h2>
       <span className="section__subtitle">Contact Me</span>
 
