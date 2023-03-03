@@ -18,7 +18,7 @@ const Services = () => {
         <div className="services__content">
           <div>
             <i className="uil uil-web-grid services__icon" />
-            <h3 className="services__title">Product Designer</h3>
+            <h3 className="services__title">UX/UI Design</h3>
           </div>
 
           <span className="services__button" onClick={() => toggleTab(1)}>
@@ -86,7 +86,7 @@ const Services = () => {
         <div className="services__content">
           <div>
             <i className="uil uil-arrow services__icon" />
-            <h3 className="services__title">Visual Designer</h3>
+            <h3 className="services__title">Code & Development</h3>
           </div>
 
           <span className="services__button" onClick={() => toggleTab(2)}>
@@ -154,7 +154,7 @@ const Services = () => {
         <div className="services__content">
           <div>
             <i className="uil uil-edit services__icon" />
-            <h3 className="services__title">UI/UX Designer</h3>
+            <h3 className="services__title">Coaching</h3>
           </div>
 
           <span className="services__button" onClick={() => toggleTab(3)}>
