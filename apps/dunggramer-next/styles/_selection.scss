@@ -1,0 +1,15 @@
+$color-primary: var(--primary-color);
+
+::selection {
+  background: $color-primary;
+  background: rgba($color-primary, .3);
+}
+
+::-moz-selection {
+  background: $color-primary;
+  background: rgba($color-primary, .3);
+}
+
+* {
+  -webkit-tap-highlight-color: rgba($color-primary, .2);
+}

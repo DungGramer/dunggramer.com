@@ -10,7 +10,17 @@ const nextConfig = {
   nx: {
     // Set this to true if you would like to to use SVGR
     // See: https://github.com/gregberge/svgr
-    svgr: false,
+    svgr: true,
+  },
+
+  webpack: (config, options) => {
+    config.module.rules.push({
+      test: /\.svg$/,
+      issuer: /\.(js|ts)x?$/,
+      use: ['@svgr/webpack', 'url-loader']
+    });
+
+    return config;
   },
 };
 

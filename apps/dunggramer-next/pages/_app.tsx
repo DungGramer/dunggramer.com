@@ -1,6 +1,8 @@
 import { AppProps } from 'next/app';
 import Head from 'next/head';
-import './styles.css';
+
+import '../styles/main.scss';
+// import './styles.css';
 
 function CustomApp({ Component, pageProps }: AppProps) {
   return (
@@ -8,7 +10,7 @@ function CustomApp({ Component, pageProps }: AppProps) {
       <Head>
         <title>Welcome to dunggramer-next!</title>
       </Head>
-      <main className="app">
+      <main className="container">
         <Component {...pageProps} />
       </main>
     </>
