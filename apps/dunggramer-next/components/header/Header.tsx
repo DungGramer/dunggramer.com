@@ -35,6 +35,7 @@ const Header = () => {
       <nav className={styles.nav}>
         <a href="#home" className={styles.logo}>
           <Logo />
+          <i className='dg-logo' />
         </a>
 
         <div className={clsx(styles.menu, { [styles['show-menu']]: toggle })}>

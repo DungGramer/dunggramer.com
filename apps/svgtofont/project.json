@@ -10,6 +10,9 @@
         "commands": [
           {
             "command": "npx ts-node apps/svgtofont/main.ts"
+          },
+          {
+            "command": "sh apps/svgtofont/move-folder.sh"
           }
         ],
         "parallel": false
