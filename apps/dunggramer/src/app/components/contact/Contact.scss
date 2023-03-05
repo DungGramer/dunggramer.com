@@ -139,6 +139,7 @@
 
 .contact {
   position: relative;
+  overflow: hidden;
 }
 
 #hanoi {
@@ -162,34 +163,23 @@
     fill-rule: evenodd;
   }
 
-  & + .location {
-    position: absolute;
-    top: 63%;
-    right: 1rem;
+  #location {
     font-size: 0.7rem;
     font-weight: 600;
     color: #905d29;
+    fill: #905d29;
     opacity: 0;
     transition: 0.3s;
-
-    // Line 135 deg
-    &::before {
-      content: '';
-      position: absolute;
-      top: -20px;
-      left: 7rem;
-      width: 3rem;
-      height: 1px;
-      background-color: #905d29;
-      transform: rotate(-135deg);
-    }
+    cursor: pointer;
+    pointer-events: bounding-box;
 
     &:hover {
       opacity: 1;
     }
+
   }
 
-  &:hover + .location {
+  &:hover #location {
     opacity: 1;
   }
 }
