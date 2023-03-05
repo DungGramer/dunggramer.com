@@ -13,6 +13,10 @@
     "isolatedModules": true,
     "incremental": true,
     "types": ["jest", "node"],
+    "paths": {
+      "@dunggramer/icons": ["../../libs/icons/src/index.ts"],
+      "@dunggramer/icons/*": ["../../libs/icons/src/lib/*"]
+    }
   },
   "include": ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx", "next-env.d.ts"],
   "exclude": [

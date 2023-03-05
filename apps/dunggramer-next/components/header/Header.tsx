@@ -11,7 +11,7 @@ import {
 // import './Header.scss';
 import styles from './Header.module.scss';
 import { useCallback, useState, useEffect } from 'react';
-import { ReactComponent as Logo } from 'public/bold.svg';
+// import { ReactComponent as Logo } from 'public/bold.svg';
 import clsx from 'clsx';
 
 const Header = () => {
@@ -34,7 +34,6 @@ const Header = () => {
     <header className={styles['header']}>
       <nav className={styles.nav}>
         <a href="#home" className={styles.logo}>
-          <Logo />
           <i className='dg-logo' />
         </a>
 
