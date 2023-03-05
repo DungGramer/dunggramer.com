@@ -8,7 +8,7 @@ function CustomApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Welcome to dunggramer-next!</title>
+        <title>Dunggramer</title>
       </Head>
       <main className="container">
         <Component {...pageProps} />

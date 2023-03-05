@@ -1,3 +1,5 @@
+@import 'styles/breakpoints';
+
 .header {
   width: 100%;
   position: fixed;
@@ -6,12 +8,13 @@
   z-index: var(--z-fixed);
   background-color: var(--body-color);
 
-  @media screen and (max-width: 768px) {
+  @include query-max-tablet() {
     & {
       top: initial;
       bottom: 0;
     }
   }
+  
 }
 
 .nav {
@@ -20,16 +23,6 @@
   justify-content: space-between;
   align-items: center;
   column-gap: 1rem;
-
-  .logo,
-  .nav__toggle {
-    color: var(--title-color);
-    font-weight: var(--font-medium);
-  }
-
-  .logo {
-    height: 100%;
-  }
 
   .list {
     display: flex;
@@ -128,14 +121,26 @@
   box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.1);
 }
 
-#logo, .logo svg {
-  width: 100%;
+.logo,
+.nav__toggle {
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
+
+.logo {
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#logo {
+  width: 100%;
   padding: 12px;
   fill: rgb(143, 92, 42);
   stroke: #8f5c2a;
 
-  @media screen and (max-width: 768px) {
+  @include query-max-tablet() {
     & {
       padding: 6px;
     }
