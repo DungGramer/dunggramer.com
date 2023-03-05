@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "dg";
+  src: url('dg.eot?t=1678016823524'); /* IE9*/
+  src: url('dg.eot?t=1678016823524#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url("dg.woff2?t=1678016823524") format("woff2"),
+  url("dg.woff?t=1678016823524") format("woff"),
+  url('dg.ttf?t=1678016823524') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('dg.svg?t=1678016823524#dg') format('svg'); /* iOS 4.1- */
+}
+
+[class^="dg-"], [class*=" dg-"] {
+  font-family: 'dg' !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.dg-apps:before { content: "\ea01"; }
+.dg-arrow-down-left:before { content: "\ea02"; }
+.dg-arrow-down-right:before { content: "\ea03"; }
+.dg-arrow-down:before { content: "\ea04"; }
+.dg-arrow-left:before { content: "\ea05"; }
+.dg-arrow-right:before { content: "\ea06"; }
+.dg-arrow-up-left:before { content: "\ea07"; }
+.dg-arrow-up-right:before { content: "\ea08"; }
+.dg-arrow-up:before { content: "\ea09"; }
+.dg-award:before { content: "\ea0a"; }
+.dg-badge-check:before { content: "\ea0b"; }
+.dg-briefcase-alt:before { content: "\ea0c"; }
+.dg-calendar-alt:before { content: "\ea0d"; }
+.dg-ellipsis-h:before { content: "\ea0e"; }
+.dg-ellipsis-v:before { content: "\ea0f"; }
+.dg-estate:before { content: "\ea10"; }
+.dg-export:before { content: "\ea11"; }
+.dg-facebook-f:before { content: "\ea12"; }
+.dg-facebook:before { content: "\ea13"; }
+.dg-file-alt:before { content: "\ea14"; }
+.dg-files:before { content: "\ea15"; }
+.dg-github-alt:before { content: "\ea16"; }
+.dg-graduation-cap:before { content: "\ea17"; }
+.dg-instagram:before { content: "\ea18"; }
+.dg-linkedin-alt:before { content: "\ea19"; }
+.dg-logo:before { content: "\ea1a"; }
+.dg-mail-send:before { content: "\ea1b"; }
+.dg-message:before { content: "\ea1c"; }
+.dg-messenger:before { content: "\ea1d"; }
+.dg-phone:before { content: "\ea1e"; }
+.dg-scenery:before { content: "\ea1f"; }
+.dg-send:before { content: "\ea20"; }
+.dg-support:before { content: "\ea21"; }
+.dg-tiktok:before { content: "\ea22"; }
+.dg-times:before { content: "\ea23"; }
+.dg-top-arrow-to-top:before { content: "\ea24"; }
+.dg-universal-access:before { content: "\ea25"; }
+.dg-user:before { content: "\ea26"; }

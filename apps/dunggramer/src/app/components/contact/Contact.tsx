@@ -69,7 +69,7 @@ const Contact = () => {
                 className="contact__button"
               >
                 Write me
-                <i className="bx-bx-right-arrow-alt contact__button-icon" />
+                <i className="bx bx-right-arrow-alt contact__button-icon" />
               </a>
             </div>
 
@@ -81,7 +81,7 @@ const Contact = () => {
 
               <a href="tel:+84334565999" className="contact__button">
                 Write me
-                <i className="bx-bx-right-arrow-alt contact__button-icon" />
+                <i className="bx bx-right-arrow-alt contact__button-icon" />
               </a>
             </div>
 
@@ -93,7 +93,7 @@ const Contact = () => {
 
               <a href="https://m.me/DungGramer" className="contact__button">
                 Contact me
-                <i className="bx-bx-right-arrow-alt contact__button-icon" />
+                <i className="bx bx-right-arrow-alt contact__button-icon" />
               </a>
             </div>
           </div>

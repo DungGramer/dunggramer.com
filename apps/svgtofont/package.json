@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "font": "svgtofont --source ./icons --output ./font --fontname dg"
+  },
+  "svgtofont": {
+    "css": {
+      "fontSize": "16px"
+    }
+  }
+}

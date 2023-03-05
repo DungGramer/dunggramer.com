@@ -1,0 +1,38 @@
+{
+  "name": "svgtofont",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/svgtofont",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          {
+            "command": "npx ts-node apps/svgtofont/main.ts"
+          }
+        ],
+        "parallel": false
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/js:node",
+      "options": {
+        "buildTarget": "svgtofont:build"
+      },
+      "configurations": {
+        "production": {
+          "buildTarget": "svgtofont:build:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/svgtofont/**/*.ts"]
+      }
+    }
+  },
+  "tags": []
+}
