@@ -1,5 +1,12 @@
+@import 'styles/breakpoints';
+
 .container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
+  // width: 100%;
+  max-width: 80rem;
+  margin-inline: 1.5rem;
+
+  @include query-min-desktop() {
+    margin: 0 auto;
+    padding-inline: 5rem;
+  }
 }

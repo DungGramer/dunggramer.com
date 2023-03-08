@@ -10,7 +10,7 @@ function CustomApp({ Component, pageProps }: AppProps) {
       <Head>
         <title>Dunggramer</title>
       </Head>
-      <main className="container">
+      <main className="root">
         <Component {...pageProps} />
       </main>
     </>

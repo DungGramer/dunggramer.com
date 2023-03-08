@@ -6,7 +6,7 @@
   z-index: var(--z-fixed);
   background-color: var(--body-color);
 
-  @media screen and (max-width: 768px) {
+  @include query-max-tablet() {
     & {
       top: initial;
       bottom: 0;
@@ -53,7 +53,7 @@
     color: var(--title-color-dark);
   }
 
-  @media screen and (max-width: 768px) {
+  @include query-max-tablet() {
     & {
       height: var(--header-height);
     }
@@ -109,7 +109,7 @@
     }
   }
 
-  @media screen and (max-width: 350px) {
+  @mixin query-max-mobile() {
     .nav__menu {
       padding: 2rem 0.25rem 4rem;
     }
@@ -131,7 +131,7 @@
   fill: rgb(143, 92, 42);
   stroke: #8f5c2a;
 
-  @media screen and (max-width: 768px) {
+  @include query-max-tablet() {
     & {
       padding: 6px;
     }

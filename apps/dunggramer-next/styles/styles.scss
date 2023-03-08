@@ -134,11 +134,11 @@ img {
 }
 
 /*=============== LAYOUT ===============*/
-.container {
-  max-width: 968px;
-  margin-left: auto;
-  margin-right: auto;
-}
+// .container {
+//   max-width: 968px;
+//   margin-left: auto;
+//   margin-right: auto;
+// }
 
 .grid {
   display: grid;
@@ -190,7 +190,7 @@ img {
 }
 
 /* For medium devices */
-@media screen and (max-width: 768px) {
+@include query-max-tablet() {
   body {
     margin: 0 0 var(--header-height) 0;
   }
@@ -208,7 +208,7 @@ img {
 }
 
 /* For small devices */
-@media screen and (max-width: 350px) {
+@mixin query-max-mobile() {
   :root {
     --big-font-size: 2.25rem;
   }

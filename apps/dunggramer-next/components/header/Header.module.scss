@@ -14,7 +14,6 @@
       bottom: 0;
     }
   }
-  
 }
 
 .nav {
@@ -50,7 +49,7 @@
     color: var(--title-color-dark);
   }
 
-  @media screen and (max-width: 768px) {
+  @include query-max-tablet() {
     & {
       height: var(--header-height);
     }
@@ -106,7 +105,7 @@
     }
   }
 
-  @media screen and (max-width: 350px) {
+  @mixin query-max-mobile() {
     .menu {
       padding: 2rem 0.25rem 4rem;
     }
@@ -136,13 +135,10 @@
 
 #logo {
   width: 100%;
-  padding: 12px;
-  fill: rgb(143, 92, 42);
-  stroke: #8f5c2a;
+  color: rgb(var(--primary-color));
+  font-size: 3rem;
 
   @include query-max-tablet() {
-    & {
-      padding: 6px;
-    }
+    font-size: 2.5rem;
   }
 }

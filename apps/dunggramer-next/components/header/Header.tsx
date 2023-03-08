@@ -1,17 +1,18 @@
 import clsx from 'clsx';
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useState, useRef } from 'react';
 import styles from './Header.module.scss';
 import NavItem from './NavItem';
 
 const Header = () => {
   const [toggle, showMenu] = useState(false);
   const [activeNav, setActiveNav] = useState('#home');
+  const focusVisible = useRef<HTMLUListElement>(null);
 
   const watchScroll = useCallback(() => {
     const header = document.querySelector('.header');
-    if (header) {
-      header.classList.toggle('scroll-header', window.scrollY >= 80);
-    }
+    if (!header) return;
+
+    header.classList.toggle(styles['scroll-header'], window.scrollY >= 80);
   }, []);
 
   useEffect(() => {
@@ -19,23 +20,42 @@ const Header = () => {
     return () => window.removeEventListener('scroll', watchScroll);
   }, [watchScroll]);
 
+  useEffect(() => {
+    if (!focusVisible.current) return;
+
+    const focusable = focusVisible.current.querySelectorAll('a');
+    focusable.forEach((item) => {
+      item.addEventListener('focus', () => {
+        item.classList.add(styles['focus-visible']);
+        showMenu(true);
+      });
+      item.addEventListener('blur', () => {
+        item.classList.remove(styles['focus-visible']);
+
+        if (document.activeElement === focusVisible.current) {
+          showMenu(false);
+        }
+      });
+    });
+  }, [focusVisible]);
+
   return (
     <header className={styles['header']}>
-      <nav className={styles.nav}>
+      <nav className={clsx(styles.nav, 'container')}>
         <a href="#home" className={styles.logo}>
           <i id={styles.logo} className="dg-logo" />
         </a>
 
         <div className={clsx(styles.menu, { [styles['show-menu']]: toggle })}>
-          <ul className={clsx('grid', styles['list'])}>
+          <ul ref={focusVisible} className={clsx('grid', styles['list'])}>
             {NavList.map((item) => (
               <NavItem
-                key={item.href}
+                activeNav={activeNav}
                 href={item.href}
                 icon={item.icon}
-                title={item.title}
-                activeNav={activeNav}
+                key={item.href}
                 setActiveNav={setActiveNav}
+                title={item.title}
               />
             ))}
           </ul>
@@ -49,6 +69,8 @@ const Header = () => {
         <div
           className={styles['nav__toggle']}
           onClick={() => showMenu((prev) => !prev)}
+          tabIndex={0}
+          aria-label="menu"
         >
           <i className="dg-apps" />
         </div>

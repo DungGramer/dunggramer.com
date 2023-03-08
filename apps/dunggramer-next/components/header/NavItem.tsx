@@ -18,7 +18,7 @@ const NavItem = ({ href, icon, title, activeNav, setActiveNav }) => {
         })}
         onClick={handleClick}
       >
-        <i className={clsx(styles['nav-item'], `dg-${icon}`)} />
+        <i className={clsx(styles['nav-item'], styles['nav__icon'], `dg-${icon}`)} />
         <p>{title}</p>
       </Link>
     </li>
