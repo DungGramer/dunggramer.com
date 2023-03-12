@@ -234,3 +234,44 @@ h3 {
     animation: scroll 2s ease infinite;
   }
 }
+
+#hanoi {
+  position: absolute;
+  // z-index: -1;
+  opacity: 0.3;
+  right: 0;
+  height: 100%;
+
+  .cls-1 {
+    fill: #905d29;
+  }
+  .cls-2 {
+    fill: #d3d3d3;
+  }
+  .cls-3 {
+    fill: none;
+    stroke: #905d29;
+    stroke-miterlimit: 10;
+    stroke-width: 5px;
+    fill-rule: evenodd;
+  }
+
+  #location {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #905d29;
+    fill: #905d29;
+    opacity: 0;
+    transition: 0.3s;
+    cursor: pointer;
+    pointer-events: bounding-box;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &:hover #location {
+    opacity: 1;
+  }
+}

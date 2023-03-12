@@ -1,4 +1,5 @@
 import About from 'components/about/About';
+import Contact from 'components/contact/Contact';
 import Header from 'components/header';
 import Hero from 'components/hero/Hero';
 import Portfolio from 'components/portfolio/Portfolio';
@@ -18,6 +19,7 @@ export function Index() {
         <Services />
         <Qualification />
         <Portfolio />
+        <Contact />
       </main>
     </>
   );
