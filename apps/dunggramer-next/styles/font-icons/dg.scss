@@ -16,37 +16,41 @@
 .dg-arrow-up-left:before { content: "\ea07"; }
 .dg-arrow-up-right:before { content: "\ea08"; }
 .dg-arrow-up:before { content: "\ea09"; }
-.dg-award:before { content: "\ea0a"; }
-.dg-badge-check:before { content: "\ea0b"; }
-.dg-briefcase-alt:before { content: "\ea0c"; }
-.dg-calendar-alt:before { content: "\ea0d"; }
-.dg-check-circle:before { content: "\ea0e"; }
-.dg-ellipsis-h:before { content: "\ea0f"; }
-.dg-ellipsis-v:before { content: "\ea10"; }
-.dg-estate:before { content: "\ea11"; }
-.dg-export:before { content: "\ea12"; }
-.dg-facebook-f:before { content: "\ea13"; }
-.dg-facebook:before { content: "\ea14"; }
-.dg-file-alt:before { content: "\ea15"; }
-.dg-files:before { content: "\ea16"; }
-.dg-github-alt:before { content: "\ea17"; }
-.dg-graduation-cap:before { content: "\ea18"; }
-.dg-instagram:before { content: "\ea19"; }
-.dg-linkedin-alt:before { content: "\ea1a"; }
-.dg-logo:before { content: "\ea1b"; }
-.dg-mail-send:before { content: "\ea1c"; }
-.dg-message:before { content: "\ea1d"; }
-.dg-messenger:before { content: "\ea1e"; }
-.dg-phone:before { content: "\ea1f"; }
-.dg-scenery:before { content: "\ea20"; }
-.dg-send:before { content: "\ea21"; }
-.dg-support:before { content: "\ea22"; }
-.dg-tiktok:before { content: "\ea23"; }
-.dg-times:before { content: "\ea24"; }
-.dg-top-arrow-to-top:before { content: "\ea25"; }
-.dg-universal-access:before { content: "\ea26"; }
-.dg-user:before { content: "\ea27"; }
-.dg-web-grid:before { content: "\ea28"; }
+.dg-arrow:before { content: "\ea0a"; }
+.dg-award:before { content: "\ea0b"; }
+.dg-badge-check:before { content: "\ea0c"; }
+.dg-brackets-curly:before { content: "\ea0d"; }
+.dg-briefcase-alt:before { content: "\ea0e"; }
+.dg-calendar-alt:before { content: "\ea0f"; }
+.dg-check-circle:before { content: "\ea10"; }
+.dg-ellipsis-h:before { content: "\ea11"; }
+.dg-ellipsis-v:before { content: "\ea12"; }
+.dg-estate:before { content: "\ea13"; }
+.dg-export:before { content: "\ea14"; }
+.dg-facebook-f:before { content: "\ea15"; }
+.dg-facebook:before { content: "\ea16"; }
+.dg-file-alt:before { content: "\ea17"; }
+.dg-files:before { content: "\ea18"; }
+.dg-github-alt:before { content: "\ea19"; }
+.dg-graduation-cap:before { content: "\ea1a"; }
+.dg-instagram:before { content: "\ea1b"; }
+.dg-knowledge-sharing:before { content: "\ea1c"; }
+.dg-linkedin-alt:before { content: "\ea1d"; }
+.dg-logo:before { content: "\ea1e"; }
+.dg-magnifying-glass:before { content: "\ea1f"; }
+.dg-mail-send:before { content: "\ea20"; }
+.dg-message:before { content: "\ea21"; }
+.dg-messenger:before { content: "\ea22"; }
+.dg-phone:before { content: "\ea23"; }
+.dg-scenery:before { content: "\ea24"; }
+.dg-send:before { content: "\ea25"; }
+.dg-support:before { content: "\ea26"; }
+.dg-tiktok:before { content: "\ea27"; }
+.dg-times:before { content: "\ea28"; }
+.dg-top-arrow-to-top:before { content: "\ea29"; }
+.dg-universal-access:before { content: "\ea2a"; }
+.dg-user:before { content: "\ea2b"; }
+.dg-web-grid:before { content: "\ea2c"; }
 
 $dg-apps: "\ea01";
 $dg-arrow-down-left: "\ea02";
@@ -57,43 +61,47 @@ $dg-arrow-right: "\ea06";
 $dg-arrow-up-left: "\ea07";
 $dg-arrow-up-right: "\ea08";
 $dg-arrow-up: "\ea09";
-$dg-award: "\ea0a";
-$dg-badge-check: "\ea0b";
-$dg-briefcase-alt: "\ea0c";
-$dg-calendar-alt: "\ea0d";
-$dg-check-circle: "\ea0e";
-$dg-ellipsis-h: "\ea0f";
-$dg-ellipsis-v: "\ea10";
-$dg-estate: "\ea11";
-$dg-export: "\ea12";
-$dg-facebook-f: "\ea13";
-$dg-facebook: "\ea14";
-$dg-file-alt: "\ea15";
-$dg-files: "\ea16";
-$dg-github-alt: "\ea17";
-$dg-graduation-cap: "\ea18";
-$dg-instagram: "\ea19";
-$dg-linkedin-alt: "\ea1a";
-$dg-logo: "\ea1b";
-$dg-mail-send: "\ea1c";
-$dg-message: "\ea1d";
-$dg-messenger: "\ea1e";
-$dg-phone: "\ea1f";
-$dg-scenery: "\ea20";
-$dg-send: "\ea21";
-$dg-support: "\ea22";
-$dg-tiktok: "\ea23";
-$dg-times: "\ea24";
-$dg-top-arrow-to-top: "\ea25";
-$dg-universal-access: "\ea26";
-$dg-user: "\ea27";
-$dg-web-grid: "\ea28";
+$dg-arrow: "\ea0a";
+$dg-award: "\ea0b";
+$dg-badge-check: "\ea0c";
+$dg-brackets-curly: "\ea0d";
+$dg-briefcase-alt: "\ea0e";
+$dg-calendar-alt: "\ea0f";
+$dg-check-circle: "\ea10";
+$dg-ellipsis-h: "\ea11";
+$dg-ellipsis-v: "\ea12";
+$dg-estate: "\ea13";
+$dg-export: "\ea14";
+$dg-facebook-f: "\ea15";
+$dg-facebook: "\ea16";
+$dg-file-alt: "\ea17";
+$dg-files: "\ea18";
+$dg-github-alt: "\ea19";
+$dg-graduation-cap: "\ea1a";
+$dg-instagram: "\ea1b";
+$dg-knowledge-sharing: "\ea1c";
+$dg-linkedin-alt: "\ea1d";
+$dg-logo: "\ea1e";
+$dg-magnifying-glass: "\ea1f";
+$dg-mail-send: "\ea20";
+$dg-message: "\ea21";
+$dg-messenger: "\ea22";
+$dg-phone: "\ea23";
+$dg-scenery: "\ea24";
+$dg-send: "\ea25";
+$dg-support: "\ea26";
+$dg-tiktok: "\ea27";
+$dg-times: "\ea28";
+$dg-top-arrow-to-top: "\ea29";
+$dg-universal-access: "\ea2a";
+$dg-user: "\ea2b";
+$dg-web-grid: "\ea2c";
 
 @font-face {font-family: "dg";
-  src: url('/fonts/dg.eot?t=7388063348308'); /* IE9*/
-  src: url('/fonts/dg.eot?t=7388063348308#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('/fonts/dg.woff2?t=7388063348308') format('woff2'), /* chrome firefox */
-  url('/fonts/dg.woff?t=7388063348308') format('woff'), /* chrome firefox */
-  url('/fonts/dg.ttf?t=7388063348308') format('truetype'), /* chrome firefox opera Safari, Android, iOS 4.2+*/
-  url('/fonts/dg.svg?t=7388063348308#dg') format('svg'); /* iOS 4.1- */
+  src: url('/fonts/dg.eot?t=7476542780189'); /* IE9*/
+  src: url('/fonts/dg.eot?t=7476542780189#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('/fonts/dg.woff2?t=7476542780189') format('woff2'), /* chrome firefox */
+  url('/fonts/dg.woff?t=7476542780189') format('woff'), /* chrome firefox */
+  url('/fonts/dg.ttf?t=7476542780189') format('truetype'), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+  url('/fonts/dg.svg?t=7476542780189#dg') format('svg'); /* iOS 4.1- */
 }

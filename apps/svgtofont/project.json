@@ -19,14 +19,14 @@
       }
     },
     "serve": {
-      "executor": "@nrwl/js:node",
+      "executor": "nx:run-commands",
       "options": {
-        "buildTarget": "svgtofont:build"
-      },
-      "configurations": {
-        "production": {
-          "buildTarget": "svgtofont:build:production"
-        }
+        "commands": [
+          {
+            "command": "serve apps/svgtofont/font"
+          }
+        ],
+        "parallel": false
       }
     },
     "lint": {

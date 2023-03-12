@@ -33,7 +33,7 @@
   transition: 0.3s;
 
   .services__modal-content {
-    width: 500px;
+    width: 60%;
     position: relative;
     background-color: var(--container-color);
     padding: 4.5rem 2.5rem 2.5rem;
@@ -147,4 +147,8 @@
 .services__button-icon {
   font-size: 1rem;
   transition: 0.3s;
+}
+
+.services__icon {
+  font-size: 2rem;
 }
