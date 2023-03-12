@@ -6,10 +6,10 @@ appName='dunggramer-next'
 output='fonts'
 
 # Clean up folder if exist
-rm -rf "${ROOT}/libs/icons}"
+rm -rf "${ROOT}/libs/icons/src/lib/"
 
 # Move the folder to the root_dir and subfolder libs and rename to icons
-mv "./font/react/" "./font/icons/" && mv "./font/icons" "${ROOT}/libs"
+mv "./font/react/" "./font/lib/" && mv "./font/lib" "${ROOT}/libs/icons/src"
 
 
 # Copy font file to apps/dunggramer-next folder
@@ -23,13 +23,15 @@ mkdir -p "${ROOT}/apps/${appName}/styles/font-icons"
 cp "./font/${iconName}.scss" "${ROOT}/apps/${appName}/styles/font-icons"
 
 # @import 'font-icons/dg' in apps/dunggramer-next/styles/main.scss
-echo -e "\n@import 'font-icons/${iconName}';" >> "${ROOT}/apps/${appName}/styles/main.scss"
+# echo -e "\n@import 'font-icons/${iconName}';" >> "${ROOT}/apps/${appName}/styles/main.scss"
 
 # Remove 1 to 8th line in apps/dunggramer-next/styles/font-icons/dg.scss
 sed -i '1,8d' "${ROOT}/apps/${appName}/styles/font-icons/${iconName}.scss"
 
 # Add 8th line to head of apps/dunggramer-next/styles/font-icons/dg.scss
-hash='t=1678016823524'
+# Random hash 13 number for cache
+randomHash=$(shuf -i 1000000000000-9999999999999 -n 1)
+hash="t=${randomHash}"
 {
   echo -e "@font-face {font-family: \"${iconName}\";"
   echo -e "  src: url('/${output}/${iconName}.eot?${hash}'); /* IE9*/"

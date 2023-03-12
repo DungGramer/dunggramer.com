@@ -1,7 +1,6 @@
+import clsx from 'clsx';
 import Frontend from './Frontend';
 import styles from './Skills.module.scss';
-import Backend from './Backend';
-import clsx from 'clsx';
 
 const Skills = () => {
   return (
@@ -11,7 +10,6 @@ const Skills = () => {
 
       <div className={clsx('container grid', styles['skills__container'])}>
         <Frontend />
-        {/* <Backend /> */}
       </div>
     </section>
   );

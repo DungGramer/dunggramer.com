@@ -1,10 +1,10 @@
 @font-face {font-family: "dg";
-  src: url('dg.eot?t=1678026430564'); /* IE9*/
-  src: url('dg.eot?t=1678026430564#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url("dg.woff2?t=1678026430564") format("woff2"),
-  url("dg.woff?t=1678026430564") format("woff"),
-  url('dg.ttf?t=1678026430564') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('dg.svg?t=1678026430564#dg') format('svg'); /* iOS 4.1- */
+  src: url('dg.eot?t=1678599703528'); /* IE9*/
+  src: url('dg.eot?t=1678599703528#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url("dg.woff2?t=1678599703528") format("woff2"),
+  url("dg.woff?t=1678599703528") format("woff"),
+  url('dg.ttf?t=1678599703528') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('dg.svg?t=1678599703528#dg') format('svg'); /* iOS 4.1- */
 }
 
 [class^="dg-"], [class*=" dg-"] {
@@ -28,31 +28,33 @@
 .dg-badge-check:before { content: "\ea0b"; }
 .dg-briefcase-alt:before { content: "\ea0c"; }
 .dg-calendar-alt:before { content: "\ea0d"; }
-.dg-ellipsis-h:before { content: "\ea0e"; }
-.dg-ellipsis-v:before { content: "\ea0f"; }
-.dg-estate:before { content: "\ea10"; }
-.dg-export:before { content: "\ea11"; }
-.dg-facebook-f:before { content: "\ea12"; }
-.dg-facebook:before { content: "\ea13"; }
-.dg-file-alt:before { content: "\ea14"; }
-.dg-files:before { content: "\ea15"; }
-.dg-github-alt:before { content: "\ea16"; }
-.dg-graduation-cap:before { content: "\ea17"; }
-.dg-instagram:before { content: "\ea18"; }
-.dg-linkedin-alt:before { content: "\ea19"; }
-.dg-logo:before { content: "\ea1a"; }
-.dg-mail-send:before { content: "\ea1b"; }
-.dg-message:before { content: "\ea1c"; }
-.dg-messenger:before { content: "\ea1d"; }
-.dg-phone:before { content: "\ea1e"; }
-.dg-scenery:before { content: "\ea1f"; }
-.dg-send:before { content: "\ea20"; }
-.dg-support:before { content: "\ea21"; }
-.dg-tiktok:before { content: "\ea22"; }
-.dg-times:before { content: "\ea23"; }
-.dg-top-arrow-to-top:before { content: "\ea24"; }
-.dg-universal-access:before { content: "\ea25"; }
-.dg-user:before { content: "\ea26"; }
+.dg-check-circle:before { content: "\ea0e"; }
+.dg-ellipsis-h:before { content: "\ea0f"; }
+.dg-ellipsis-v:before { content: "\ea10"; }
+.dg-estate:before { content: "\ea11"; }
+.dg-export:before { content: "\ea12"; }
+.dg-facebook-f:before { content: "\ea13"; }
+.dg-facebook:before { content: "\ea14"; }
+.dg-file-alt:before { content: "\ea15"; }
+.dg-files:before { content: "\ea16"; }
+.dg-github-alt:before { content: "\ea17"; }
+.dg-graduation-cap:before { content: "\ea18"; }
+.dg-instagram:before { content: "\ea19"; }
+.dg-linkedin-alt:before { content: "\ea1a"; }
+.dg-logo:before { content: "\ea1b"; }
+.dg-mail-send:before { content: "\ea1c"; }
+.dg-message:before { content: "\ea1d"; }
+.dg-messenger:before { content: "\ea1e"; }
+.dg-phone:before { content: "\ea1f"; }
+.dg-scenery:before { content: "\ea20"; }
+.dg-send:before { content: "\ea21"; }
+.dg-support:before { content: "\ea22"; }
+.dg-tiktok:before { content: "\ea23"; }
+.dg-times:before { content: "\ea24"; }
+.dg-top-arrow-to-top:before { content: "\ea25"; }
+.dg-universal-access:before { content: "\ea26"; }
+.dg-user:before { content: "\ea27"; }
+.dg-web-grid:before { content: "\ea28"; }
 
 $dg-apps: "\ea01";
 $dg-arrow-down-left: "\ea02";
@@ -67,29 +69,31 @@ $dg-award: "\ea0a";
 $dg-badge-check: "\ea0b";
 $dg-briefcase-alt: "\ea0c";
 $dg-calendar-alt: "\ea0d";
-$dg-ellipsis-h: "\ea0e";
-$dg-ellipsis-v: "\ea0f";
-$dg-estate: "\ea10";
-$dg-export: "\ea11";
-$dg-facebook-f: "\ea12";
-$dg-facebook: "\ea13";
-$dg-file-alt: "\ea14";
-$dg-files: "\ea15";
-$dg-github-alt: "\ea16";
-$dg-graduation-cap: "\ea17";
-$dg-instagram: "\ea18";
-$dg-linkedin-alt: "\ea19";
-$dg-logo: "\ea1a";
-$dg-mail-send: "\ea1b";
-$dg-message: "\ea1c";
-$dg-messenger: "\ea1d";
-$dg-phone: "\ea1e";
-$dg-scenery: "\ea1f";
-$dg-send: "\ea20";
-$dg-support: "\ea21";
-$dg-tiktok: "\ea22";
-$dg-times: "\ea23";
-$dg-top-arrow-to-top: "\ea24";
-$dg-universal-access: "\ea25";
-$dg-user: "\ea26";
+$dg-check-circle: "\ea0e";
+$dg-ellipsis-h: "\ea0f";
+$dg-ellipsis-v: "\ea10";
+$dg-estate: "\ea11";
+$dg-export: "\ea12";
+$dg-facebook-f: "\ea13";
+$dg-facebook: "\ea14";
+$dg-file-alt: "\ea15";
+$dg-files: "\ea16";
+$dg-github-alt: "\ea17";
+$dg-graduation-cap: "\ea18";
+$dg-instagram: "\ea19";
+$dg-linkedin-alt: "\ea1a";
+$dg-logo: "\ea1b";
+$dg-mail-send: "\ea1c";
+$dg-message: "\ea1d";
+$dg-messenger: "\ea1e";
+$dg-phone: "\ea1f";
+$dg-scenery: "\ea20";
+$dg-send: "\ea21";
+$dg-support: "\ea22";
+$dg-tiktok: "\ea23";
+$dg-times: "\ea24";
+$dg-top-arrow-to-top: "\ea25";
+$dg-universal-access: "\ea26";
+$dg-user: "\ea27";
+$dg-web-grid: "\ea28";
 
