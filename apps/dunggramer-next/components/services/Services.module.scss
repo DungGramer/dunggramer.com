@@ -1,17 +1,19 @@
+@import 'styles/breakpoints';
+
 .services__container {
   grid-template-columns: repeat(3, 270px);
   justify-content: center;
   column-gap: 1.8rem;
 
-  @media screen and (max-width: 992px) {
+  @include query-max-tablet-landscape() {
     grid-template-columns: repeat(2, 218px);
   }
 
-  @media screen and (max-width: 768px) {
+  @include query-max-tablet() {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @media screen and (max-width: 350px) {
+  @include query-max-mobile() {
     grid-template-columns: max-content;
   }
 }
@@ -43,7 +45,7 @@
       padding: 4.5rem 1.5rem 2.5rem;
     }
 
-    @media screen and (max-width: 350px) {
+    @include query-max-mobile() {
       padding-inline-end: 6rem;
     }
   }
@@ -109,7 +111,7 @@
   padding: 6rem 0 2rem 2.5rem;
   background-color: var(--container-color);
 
-  @media screen and (max-width: 768px) {
+  @include query-max-tablet() {
     padding: 3.5rem 0.5rem 1.25rem 1.5rem;
   }
 }
@@ -120,7 +122,7 @@
   color: var(--title-color);
   margin-block-end: var(--mb-1);
 
-  @media screen and (max-width: 768px) {
+  @include query-max-tablet() {
     font-size: 1.5rem;
   }
 }
