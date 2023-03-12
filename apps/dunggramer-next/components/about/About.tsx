@@ -5,9 +5,9 @@ import clsx from 'clsx';
 
 const About = () => {
   return (
-    <section className="about section" id={styles['about']}>
-      <h2 className='section__title'>About Me</h2>
-      <span className='section__subtitle'>My introduction</span>
+    <section className={clsx(styles['about'], 'section')} id="about">
+      <h2 className="section__title">About Me</h2>
+      <span className="section__subtitle">My introduction</span>
 
       <div className={clsx('container grid', styles['about__container'])}>
         <Image

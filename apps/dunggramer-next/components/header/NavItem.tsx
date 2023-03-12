@@ -17,6 +17,7 @@ const NavItem = ({ href, icon, title, activeNav, setActiveNav }) => {
           [styles['active-link']]: activeNav === href,
         })}
         onClick={handleClick}
+        scroll={false}
       >
         <i className={clsx(styles['nav-item'], styles['nav__icon'], `dg-${icon}`)} />
         <p>{title}</p>
