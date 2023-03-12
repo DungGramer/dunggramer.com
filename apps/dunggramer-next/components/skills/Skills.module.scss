@@ -1,0 +1,14 @@
+.skills__container {
+  grid-template-columns: repeat(2, 450px);
+  column-gap: 3rem;
+  justify-content: center;
+
+  @media screen and (max-width: 992px) {
+    grid-template-columns: max-content;
+    row-gap: 2rem;
+  }
+
+  @media screen and (max-width: 576px) {
+    grid-template-columns: 1fr;
+  }
+}
