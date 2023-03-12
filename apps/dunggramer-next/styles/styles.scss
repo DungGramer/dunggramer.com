@@ -218,3 +218,18 @@ img {
     margin-right: var(--mb-1);
   }
 }
+
+
+
+
+
+// BASE
+.scroll-mouse {
+  path {
+    stroke: var(--title-color);
+  }
+
+  .wheel {
+    animation: scroll 2s ease infinite;
+  }
+}

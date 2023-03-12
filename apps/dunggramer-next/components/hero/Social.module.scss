@@ -1,0 +1,14 @@
+.home__social {
+  display: grid;
+  grid-template-columns: max-content;
+  row-gap: 1rem;
+}
+
+.home__social-icon {
+  font-size: 1.25em;
+  color: var(--title-color);
+
+  &:hover {
+    color: var(--title-color-dark);
+  }
+}
