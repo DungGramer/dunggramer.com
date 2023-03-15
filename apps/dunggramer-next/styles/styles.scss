@@ -234,11 +234,11 @@ h3 {
 #hanoi {
   position: absolute;
   // z-index: -1;
-  opacity: 0.3;
+  opacity: 0.8;
   right: 0;
   height: 100%;
 
-  .cls-1 {
+/*   .cls-1 {
     fill: #905d29;
   }
   .cls-2 {
@@ -269,5 +269,5 @@ h3 {
 
   &:hover #location {
     opacity: 1;
-  }
+  } */
 }

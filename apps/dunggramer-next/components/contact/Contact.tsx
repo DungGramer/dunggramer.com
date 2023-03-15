@@ -1,10 +1,10 @@
 import { ReactComponent as Send } from 'public/send.svg';
-import { ReactComponent as Hanoi } from 'public/hanoi.svg';
 import { useCallback, useEffect, useRef } from 'react';
 import styles from './Contact.module.scss';
 
 import emailjs from '@emailjs/browser';
 import clsx from 'clsx';
+import Image from 'next/image';
 
 const Contact = () => {
   const form = useRef<HTMLFormElement | null>(null);
@@ -34,20 +34,37 @@ const Contact = () => {
     window.open('https://goo.gl/maps/RR7LLeZRR647BHVN7', '_blank', 'noopener');
   }, []);
 
-  useEffect(() => {
-    const location = document.querySelector('#location') as SVGGElement;
-    if (!location) return;
+  // useEffect(() => {
+  //   const location = document.querySelector('#location') as SVGGElement;
+  //   if (!location) return;
 
-    location.addEventListener('mousedown', gotToLocation);
+  //   location.addEventListener('mousedown', gotToLocation);
 
-    return () => {
-      location.removeEventListener('mousedown', gotToLocation);
-    };
-  }, [gotToLocation]);
+  //   return () => {
+  //     location.removeEventListener('mousedown', gotToLocation);
+  //   };
+  // }, [gotToLocation]);
 
   return (
     <section className="contact section" id="contact">
-      <Hanoi id={'hanoi'} />
+      {/* <Hanoi id={'hanoi'} /> */}
+      <div className={styles.map}>
+        <Image
+          src="/hanoi.png"
+          id={styles.hanoi}
+          width={741}
+          height={888}
+          alt="Hanoi Map"
+        />
+        <a
+          id={styles.location}
+          href="https://goo.gl/maps/RR7LLeZRR647BHVN7"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          125D Minh Khai, Hai Ba Trung, Hanoi, Vietnam
+        </a>
+      </div>
       <h2 className="section__title">Get in touch</h2>
       <span className="section__subtitle">Contact Me</span>
 
@@ -62,8 +79,8 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className={styles["contact__content"]}>
-          <h3 className={styles["contact__title"]}>Write me your project</h3>
+        <div className={styles['contact__content']}>
+          <h3 className={styles['contact__title']}>Write me your project</h3>
 
           <form
             className={styles['contact__form']}
@@ -104,7 +121,7 @@ const Contact = () => {
                 styles['contact__form-area']
               )}
             >
-              <label htmlFor="" className={styles["contact__form-tag"]}>
+              <label htmlFor="" className={styles['contact__form-tag']}>
                 Project
               </label>
               <textarea
@@ -118,7 +135,7 @@ const Contact = () => {
 
             <button className="button button--flex">
               Send Message
-              <Send className={styles["send"]} />
+              <Send className={styles['send']} />
             </button>
           </form>
         </div>
