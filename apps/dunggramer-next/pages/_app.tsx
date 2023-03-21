@@ -7,7 +7,7 @@ function CustomApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Dunggramer</title>
+        <title>Dunggramer - Frontend Developer</title>
       </Head>
         <Component {...pageProps} />
     </>
