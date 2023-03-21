@@ -28,6 +28,10 @@ const nextConfig = {
     EMAILJS_TEMPLATE_ID: 'template_0z18f2f',
     EMAILJS_PUBLIC_KEY: 'Q85d7DKHi0gV6ZUCE',
   },
+
+  images: {
+    domains: ['img.badgesize.io', 'camo.githubusercontent.com'],
+  }
 };
 
 module.exports = withNx(nextConfig);
