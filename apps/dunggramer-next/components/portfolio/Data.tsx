@@ -1,6 +1,6 @@
 export const projectsData = [
   {
-    image: '/work1.jpg',
+    image: '/sds.png',
     title: 'Simple Design System',
     category: 'Web',
     link: 'https://simple-design-system.netlify.app/',
@@ -8,9 +8,9 @@ export const projectsData = [
     tags: ['React', 'Webpack', 'Babel', 'Sass'],
   },
   {
-    image: '/npm-cover.jpg',
+    image: '/npm-cover.png',
     title: 'JSX Mini',
-    category: 'Node Modules',
+    category: 'Packages',
     link: 'https://www.npmjs.com/package/jsx-mini',
     description: 'Using JSX without React.js',
     npm_tags: [
@@ -20,29 +20,48 @@ export const projectsData = [
     ],
   },
   {
-    image: '/work3.jpg',
+    image: '/npm-cover.png',
+    title: '@dunggramer/prettier',
+    category: 'Packages',
+    link: 'https://www.npmjs.com/package/@dunggramer/prettier',
+    description: 'The shareable configuration for Prettier in your project',
+    npm_tags: [
+      'https://img.shields.io/npm/dt/@dunggramer/prettier?label=@dunggramer/prettier',
+      'https://img.shields.io/npm/v/@dunggramer/prettier',
+      'https://img.badgesize.io/DungGramer/prettier/master/prettier.config.js.svg?label=File_size',
+    ],
+  },
+  {
+    image: '/simple8.png',
     title: 'Simple8',
     category: 'Web',
-    link: 'https://simple8.netlify.app/',
+    link: 'https://simple8.online/',
     description: 'A simple eCommerce website',
     tags: ['Bootstrap', 'PHP', 'SQL', 'Sass', 'PWA'],
   },
   {
-    image: '/work4.jpg',
-    title: 'App Design',
+    image: '/phimphim.png',
+    title: 'PhimPhim',
     category: 'App',
+    link: 'https://github.com/DungGramer/phimphim',
+    description:
+      'A app for updated newest movies, suggestions according to your favorite movies',
+    tags: ['React Native', 'Expo', 'themoviedb API'],
   },
   {
-    image: '/work5.jpg',
-    title: 'Web Design',
-    category: 'Web',
+    image: '/toc-generate.png',
+    title: 'TOC Generate',
+    category: 'Library',
+    link: 'https://dunggramer.github.io/toc-generate/public/',
+    description: 'Create a table of contents for a HTML, ESModule',
+    tags: ['javascript', 'html'],
   },
 ];
 
 export const projectsNav = [
-  { name: 'Node Modules' },
+  { name: 'Packages' },
   { name: 'Web' },
-  { name: 'App' },
   { name: 'All' },
-  { name: 'Contributions' },
+  { name: 'App' },
+  { name: 'Library' },
 ];

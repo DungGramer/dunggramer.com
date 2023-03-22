@@ -31,7 +31,7 @@
 }
 
 .work__container {
-  grid-template-columns: repeat(2, max-content);
+  grid-template-columns: repeat(2, minmax(0, 341px));
   grid-gap: 3rem;
   justify-content: center;
 

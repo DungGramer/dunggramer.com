@@ -7,10 +7,11 @@ const WorkItem = ({ item }) => {
     <div className={styles['work__card']}>
       <Image
         src={item.image}
-        alt={item?.alt}
+        alt={item?.alt || item?.description}
         className={styles['work__img']}
-        width={295}
-        height={193}
+        width={300}
+        height={200}
+        unoptimized
       />
 
       <h3 className={styles['work__title']}>{item.title}</h3>

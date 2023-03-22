@@ -5,16 +5,16 @@ import styles from './Portfolio.module.scss';
 import WorkItem from './WorkItem';
 
 const Portfolio = () => {
-  const [item, setItem] = useState({ name: 'all' });
+  const [item, setItem] = useState({ name: 'All' });
   const [projects, setProjects] = useState<any>([]);
 
   useEffect(() => {
-    if (item.name === 'all') {
+    if (item.name === 'All') {
       setProjects(projectsData);
     } else {
       const newProjects = projectsData.filter(
-        (project) => project.category.toLowerCase() === item.name
-      );
+        (project) => project.category === item.name
+        );
       setProjects(newProjects);
     }
   }, [item]);
@@ -31,11 +31,11 @@ const Portfolio = () => {
       <div className={styles['work__filters']}>
         {projectsNav.map((project, index) => (
           <span
-            key={index}
+            key={project.name}
             className={clsx(styles['work__item'], {
               [styles['active-work']]: item.name === project.name,
             })}
-            onClick={() => handleClick(project.name.toLowerCase())}
+            onClick={() => handleClick(project.name)}
           >
             {project.name}
           </span>
@@ -43,7 +43,7 @@ const Portfolio = () => {
       </div>
       <div className={clsx('container grid', styles['work__container'])}>
         {projects.map((item, index) => (
-          <WorkItem item={item} key={item.id} />
+          <WorkItem item={item} key={index} />
         ))}
       </div>
     </section>
