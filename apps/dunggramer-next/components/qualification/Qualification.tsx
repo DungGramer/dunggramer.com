@@ -71,27 +71,6 @@ const Qualification = () => {
 
 const QualificationData = [
   {
-    title: 'Education',
-    icon: 'dg-graduation-cap',
-    content: [
-      {
-        title: 'Information Technology',
-        subtitle: 'Hanoi University of Business and Technology',
-        calendar: '9/2017 - 2/2022',
-      },
-      {
-        title: 'Javascript',
-        subtitle: 'FUNIX',
-        calendar: '4/2020 - 5/2021',
-      },
-      {
-        title: 'React Native',
-        subtitle: 'Developer Circles Vietnam Innovation Challenge',
-        calendar: '6/2020 - 9/2020',
-      },
-    ],
-  },
-  {
     title: 'Experience',
     icon: 'dg-briefcase-alt',
     content: [
@@ -109,6 +88,27 @@ const QualificationData = [
         title: 'Fresher Front end Developer',
         subtitle: 'TTC Solutions',
         calendar: '2020 - 2021',
+      },
+    ],
+  },
+  {
+    title: 'Education',
+    icon: 'dg-graduation-cap',
+    content: [
+      {
+        title: 'Information Technology',
+        subtitle: 'Hanoi University of Business and Technology',
+        calendar: '9/2017 - 2/2022',
+      },
+      {
+        title: 'Javascript',
+        subtitle: 'FUNIX',
+        calendar: '4/2020 - 5/2021',
+      },
+      {
+        title: 'React Native',
+        subtitle: 'Developer Circles Vietnam Innovation Challenge',
+        calendar: '6/2020 - 9/2020',
       },
     ],
   },

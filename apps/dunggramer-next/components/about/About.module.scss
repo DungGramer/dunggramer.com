@@ -24,11 +24,14 @@
 
   .about__description {
     padding: 0 4rem 0 0;
-    margin-block-end: var(--mb-2-5);
+    text-align: justify;
+
+    & + .about__description {
+      margin-block-start: var(--mb-1);
+    }
 
     @include query-max-tablet-landscape() {
       padding: 0 5rem;
-      margin-block-end: 2rem;
     }
 
     @media screen and (max-width: 576px) {
@@ -40,5 +43,13 @@
     @include query-max-tablet-landscape() {
       text-align: center;
     }
+  }
+}
+
+.download__button {
+  margin-block-start: var(--mb-2-5);
+
+  @include query-max-tablet-landscape() {
+    margin-block-start: 2rem;
   }
 }

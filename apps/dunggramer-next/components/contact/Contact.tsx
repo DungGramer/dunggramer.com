@@ -66,7 +66,7 @@ const Contact = () => {
         </a>
       </div>
       <h2 className="section__title">Get in touch</h2>
-      <span className="section__subtitle">Contact Me</span>
+      <span className="section__subtitle">Let me show you how my skills can benefit your project.</span>
 
       <div className={clsx('container grid', styles['contact__container'])}>
         <div className={styles['contact__content']}>
@@ -80,13 +80,31 @@ const Contact = () => {
         </div>
 
         <div className={styles['contact__content']}>
-          <h3 className={styles['contact__title']}>Write me your project</h3>
+          <h3 className={styles['contact__title']}>Contact me</h3>
 
           <form
             className={styles['contact__form']}
             ref={form}
             onSubmit={sendEmail}
           >
+            <div
+              className={clsx(
+                styles['contact__form-div'],
+                styles['contact__form-area']
+              )}
+            >
+              <label htmlFor="" className={styles['contact__form-tag']}>
+                Content
+              </label>
+              <textarea
+                name="project"
+                cols={30}
+                rows={10}
+                className={styles['contact__form-input']}
+                placeholder="How can I help you?"
+              ></textarea>
+            </div>
+
             <div className={styles['contact__form-div']}>
               <label htmlFor="" className={styles['contact__form-tag']}>
                 Name
@@ -97,7 +115,7 @@ const Contact = () => {
                 autoComplete="name"
                 inputMode="text"
                 className={styles['contact__form-input']}
-                placeholder="Insert your name"
+                placeholder="Your name | Company name"
               />
             </div>
 
@@ -111,30 +129,12 @@ const Contact = () => {
                 inputMode="email"
                 autoComplete="email"
                 className={styles['contact__form-input']}
-                placeholder="Insert your name"
+                placeholder="Your email"
               />
             </div>
 
-            <div
-              className={clsx(
-                styles['contact__form-div'],
-                styles['contact__form-area']
-              )}
-            >
-              <label htmlFor="" className={styles['contact__form-tag']}>
-                Project
-              </label>
-              <textarea
-                name="project"
-                cols={30}
-                rows={10}
-                className={styles['contact__form-input']}
-                placeholder="Write your project"
-              ></textarea>
-            </div>
-
             <button className="button button--flex">
-              Send Message
+              Send message
               <Send className={styles['send']} />
             </button>
           </form>

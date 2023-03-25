@@ -110,6 +110,11 @@ const NavList = [
     icon: 'message',
     title: 'Contact',
   },
+  {
+    href: 'https://blog.dunggramer.com',
+    icon: 'blog',
+    title: 'Blog',
+  }
 ];
 
 export default Header;

@@ -5,14 +5,16 @@ import styles from './WorkItem.module.scss';
 const WorkItem = ({ item }) => {
   return (
     <div className={styles['work__card']}>
-      <Image
-        src={item.image}
-        alt={item?.alt || item?.description}
-        className={styles['work__img']}
-        width={300}
-        height={200}
-        unoptimized
-      />
+      <div className={styles['work__img-container']}>
+        <Image
+          src={item.image}
+          alt={item?.alt || item?.description}
+          className={styles['work__img']}
+          width={300}
+          height={200}
+          unoptimized
+        />
+      </div>
 
       <h3 className={styles['work__title']}>{item.title}</h3>
       <a href={item?.link} className={styles['work__button']} rel="noreferrer">
