@@ -1,0 +1,55 @@
+@import 'libs/styles/breakpoints';
+
+.about {
+  .about__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 4rem;
+
+    @include query-max-tablet-landscape() {
+      grid-template-columns: 1fr;
+      row-gap: 2.5rem;
+    }
+  }
+
+  .about__img {
+    width: 350px;
+    border-radius: 1.5rem;
+    justify-self: center;
+
+    @include query-max-tablet-landscape() {
+      width: 220px;
+    }
+  }
+
+  .about__description {
+    padding: 0 4rem 0 0;
+    text-align: justify;
+
+    & + .about__description {
+      margin-block-start: var(--mb-1);
+    }
+
+    @include query-max-tablet-landscape() {
+      padding: 0 5rem;
+    }
+
+    @media screen and (max-width: 576px) {
+      padding: 0;
+    }
+  }
+
+  .about__data {
+    @include query-max-tablet-landscape() {
+      text-align: center;
+    }
+  }
+}
+
+.download__button {
+  margin-block-start: var(--mb-2-5);
+
+  @include query-max-tablet-landscape() {
+    margin-block-start: 2rem;
+  }
+}

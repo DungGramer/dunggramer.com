@@ -3,8 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "yarn nx serve dunggramer",
-    "start:next": "yarn nx serve dunggramer-next --port 3000"
+    "start:next": "yarn nx serve dunggramer --port 3000"
   },
   "private": true,
   "devDependencies": {

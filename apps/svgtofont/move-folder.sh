@@ -2,7 +2,7 @@ cd apps/svgtofont
 ROOT='../..'
 iconName='dg'
 fontExt=('.eot' '.svg' '.ttf' '.woff' '.woff2')
-appName='dunggramer-next'
+appName='dunggramer'
 output='fonts'
 
 # Clean up folder if exist
@@ -12,23 +12,23 @@ rm -rf "${ROOT}/libs/icons/src/lib/"
 mv "./font/react/" "./font/lib/" && mv "./font/lib" "${ROOT}/libs/icons/src"
 
 
-# Copy font file to apps/dunggramer-next folder
+# Copy font file to apps/dunggramer folder
 for ext in "${fontExt[@]}"
 do
   cp "./font/${iconName}${ext}" "${ROOT}/apps/${appName}/public/${output}"
 done
 
-# Copy scss file to apps/dunggramer-next folder
+# Copy scss file to apps/dunggramer folder
 mkdir -p "${ROOT}/apps/${appName}/styles/font-icons"
 cp "./font/${iconName}.scss" "${ROOT}/apps/${appName}/styles/font-icons"
 
-# @import 'font-icons/dg' in apps/dunggramer-next/styles/main.scss
+# @import 'font-icons/dg' in apps/dunggramer/styles/main.scss
 # echo -e "\n@import 'font-icons/${iconName}';" >> "${ROOT}/apps/${appName}/styles/main.scss"
 
-# Remove 1 to 8th line in apps/dunggramer-next/styles/font-icons/dg.scss
+# Remove 1 to 8th line in apps/dunggramer/styles/font-icons/dg.scss
 sed -i '1,8d' "${ROOT}/apps/${appName}/styles/font-icons/${iconName}.scss"
 
-# Add 8th line to head of apps/dunggramer-next/styles/font-icons/dg.scss
+# Add 8th line to head of apps/dunggramer/styles/font-icons/dg.scss
 # Random hash 13 number for cache
 randomHash=$(shuf -i 1000000000000-9999999999999 -n 1)
 hash="t=${randomHash}"
