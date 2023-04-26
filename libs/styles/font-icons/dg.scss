@@ -97,7 +97,9 @@ $dg-universal-access: "\ea2a";
 $dg-user: "\ea2b";
 $dg-web-grid: "\ea2c";
 
-@font-face {font-family: "dg";
+@font-face {
+  font-family: "dg";
+  font-display: optional;
   src: url('/fonts/dg.eot?t=7476542780189'); /* IE9*/
   src: url('/fonts/dg.eot?t=7476542780189#iefix') format('embedded-opentype'), /* IE6-IE8 */
   url('/fonts/dg.woff2?t=7476542780189') format('woff2'), /* chrome firefox */
