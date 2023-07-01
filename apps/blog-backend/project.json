@@ -1,0 +1,7 @@
+{
+  "name": "blog-backend",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/blog-backend",
+  "projectType": "application",
+  "tags": ["blog"]
+}
