@@ -4,7 +4,6 @@ export default defineType({
   name: 'post',
   title: 'Post',
   type: 'document',
-  i18n: true,
   fields: [
     defineField({
       name: 'title',
@@ -21,6 +20,16 @@ export default defineType({
       },
     }),
     defineField({
+      name: "meta_description",
+      title: "Meta Description",
+      type: "text",
+    }),
+    defineField({
+      name: "meta_tags",
+      title: "Meta Tags",
+      type: "string",
+    }),
+    defineField({
       name: 'author',
       title: 'Author',
       type: 'reference',
@@ -33,6 +42,13 @@ export default defineType({
       options: {
         hotspot: true,
       },
+      fields: [
+        {
+          name: "alt",
+          type: "string",
+          title: "Alternative Text",
+        },
+      ],
     }),
     defineField({
       name: 'categories',
@@ -41,47 +57,34 @@ export default defineType({
       of: [{type: 'reference', to: {type: 'category'}}],
     }),
     defineField({
+      name: "tags",
+      title: "Tags",
+      type: "array",
+      of: [{ type: "reference", to: { type: "tags" } }],
+    }),
+    defineField({
       name: 'publishedAt',
       title: 'Published at',
       type: 'datetime',
     }),
     defineField({
+      name: "isSeries",
+      title: "Is Series",
+      type: "boolean",
+      options: {
+        layout: "checkbox",
+      },
+    }),
+    defineField({
+      name: "series",
+      title: "Series",
+      type: "reference",
+      to: { type: "series" },
+    }),
+    defineField({
       name: 'body',
       title: 'Body',
-      // type: 'blockContent',
-      type: 'array',
-      of: [
-        {type: 'block'},
-        {
-          type: 'image',
-          fields: [
-            {
-              title: 'Image Position',
-              name: 'position',
-              type: 'string',
-              options: {
-                list: [
-                  {title: 'Center', value: 'center'},
-                  {title: 'Left', value: 'left'},
-                  {title: 'Right', value: 'right'},
-                ],
-                layout: 'radio',
-              },
-            },
-            {
-              name: 'alt',
-              type: 'text',
-              title: 'Alternative Text',
-            },
-          ],
-        },
-        {
-          type: 'code',
-          options: {
-            withFilename: true,
-          },
-        },
-      ],
+      type: 'blockContent',
     }),
   ],
 
