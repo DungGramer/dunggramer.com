@@ -1,22 +1,22 @@
 //@ts-check
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-const { withNx } = require('@nrwl/next/plugins/with-nx');
+const { composePlugins, withNx } = require('@nx/next');
 
 /**
- * @type {import('@nrwl/next/plugins/with-nx').WithNxOptions}
+ * @type {import('@nx/next/plugins/with-nx').WithNxOptions}
  **/
 const nextConfig = {
   nx: {
-    // Set this to true if you would like to to use SVGR
+    // Set this to true if you would like to use SVGR
     // See: https://github.com/gregberge/svgr
     svgr: false,
   },
-  env: {
-    SANITY_DATASET_NAME: process.env.SANITY_DATASET_NAME,
-    SANITY_PROJECT_ID: process.env.SANITY_PROJECT_ID,
-    SANITY_API_TOKEN: process.env.SANITY_API_TOKEN,
-  },
 };
 
-module.exports = withNx(nextConfig);
+const plugins = [
+  // Add more Next.js plugins to this list if needed.
+  withNx,
+];
+
+module.exports = composePlugins(...plugins)(nextConfig);
