@@ -48,6 +48,11 @@ export default defineType({
               type: "url",
               title: "URL",
             },
+            {
+              name: `username`,
+              title: `Username`,
+              type: `string`,
+            }
           ],
         },
       ],
@@ -76,6 +81,10 @@ export default defineType({
       name: "about",
       title: "Full About",
       type: "blockContent",
+    }),
+    defineField({
+      type: `language`,
+      name: `language`,
     }),
   ],
   preview: {

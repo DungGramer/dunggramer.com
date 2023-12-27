@@ -23,7 +23,7 @@ export default defineConfig({
         { id: 'en', title: 'English' },
         { id: 'vi', title: 'Vietnamese' },
       ],
-      schemaTypes: ['post', 'url', 'series', 'legal', 'contact', 'about', 'category', 'author'],
+      schemaTypes: ['post', 'url', 'series', 'legal', 'about', 'author', 'snippet', 'til'],
       
     }),
     media(),

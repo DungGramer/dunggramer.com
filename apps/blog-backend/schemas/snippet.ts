@@ -41,6 +41,16 @@ export default defineType({
       title: "Body",
       type: "blockContent",
     }),
+    defineField({
+      type: `language`,
+      name: `language`,
+    }),
+    defineField({
+      name: 'tags',
+      title: 'Tags',
+      type: 'array',
+      of: [{ type: 'reference', to: { type: 'tags' } }],
+    }),
   ],
 
   preview: {

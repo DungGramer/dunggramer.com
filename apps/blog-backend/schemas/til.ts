@@ -59,48 +59,48 @@ export default defineType({
       type: `array`,
       of: [{ type: `reference`, to: { type: `tags` } }],
     }),
-    defineField({
-      group: `references`,
-      name: `relatedPosts`,
-      title: `Related Posts`,
-      type: `array`,
-      of: [
-        {
-          type: `reference`,
-          to: [
-            {
-              type: `post`,
-            },
-            { type: `til` },
-          ],
-          options: {
-            filter: ({
-              document,
-            }: {
-              document: {
-                _type: string;
-                _id: string;
-              };
-            }) => {
-              const { _type, _id } = document;
+    // defineField({
+    //   group: `references`,
+    //   name: `relatedPosts`,
+    //   title: `Related Posts`,
+    //   type: `array`,
+    //   of: [
+    //     {
+    //       type: `reference`,
+    //       to: [
+    //         {
+    //           type: `post`,
+    //         },
+    //         { type: `til` },
+    //       ],
+    //       options: {
+    //         filter: ({
+    //           document,
+    //         }: {
+    //           document: {
+    //             _type: string;
+    //             _id: string;
+    //           };
+    //         }) => {
+    //           const { _type, _id } = document;
 
-              /**
-               * Don't want to allow selecting drafts
-               */
-              if (_id.includes(`drafts`)) {
-                return false;
-              }
+    //           /**
+    //            * Don't want to allow selecting drafts
+    //            */
+    //           if (_id.includes(`drafts`)) {
+    //             return false;
+    //           }
 
-              return _type === `post` || _type === `til`;
-            },
-          },
-        },
-      ],
-      validation: (Rule) => [
-        Rule.unique().error(`You can't select the same post twice`),
-        Rule.max(2).error(`Too many related posts. You should select only 2`),
-      ],
-    }),
+    //           return _type === `post` || _type === `til`;
+    //         },
+    //       },
+    //     },
+    //   ],
+    //   validation: (Rule) => [
+    //     Rule.unique().error(`You can't select the same post twice`),
+    //     Rule.max(2).error(`Too many related posts. You should select only 2`),
+    //   ],
+    // }),
   ],
 
   orderings: [
