@@ -6,13 +6,15 @@ import {codeInput} from '@sanity/code-input'
 import {dashboardTool, projectUsersWidget, projectInfoWidget} from '@sanity/dashboard'
 import { documentInternationalization } from '@sanity/document-internationalization'
 import { media } from 'sanity-plugin-media'
+import { dataset, projectId } from './config'
+import { customFields } from './schemas/customFields'
 
 export default defineConfig({
   name: 'default',
   title: 'blog.dunggramer.com',
 
-  projectId: 'n902zx7u',
-  dataset: 'production',
+  projectId,
+  dataset,
 
   plugins: [
     deskTool(),
@@ -33,6 +35,6 @@ export default defineConfig({
   ],
 
   schema: {
-    types: schemaTypes,
+    types: [...schemaTypes, ...customFields],
   },
 })

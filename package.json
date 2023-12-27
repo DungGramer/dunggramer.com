@@ -1,19 +1,19 @@
 {
   "name": "dunggramer",
-  "version": "0.0.0",
+  "version": "independent",
   "license": "MIT",
   "scripts": {
     "start:next": "yarn nx serve dunggramer --port 3000"
   },
   "private": true,
   "workspaces": [
-    "apps/blog-backend",
-    "apps/blog-frontend",
-    "apps/dunggramer"
+    "apps/*",
+    "libs/*"
   ],
   "devDependencies": {
     "@babel/preset-react": "^7.14.5",
     "@dunggramer/prettier": "^4.0.1",
+    "@emotion/babel-plugin": "^11.11.0",
     "@nrwl/cypress": "17.2.7",
     "@nrwl/esbuild": "17.2.7",
     "@nrwl/eslint-plugin-nx": "17.2.7",
@@ -78,6 +78,8 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
     "@sanity/block-content-to-react": "^3.0.0",
     "@sanity/client": "^6.10.0",
     "@sanity/image-url": "^1.0.2",

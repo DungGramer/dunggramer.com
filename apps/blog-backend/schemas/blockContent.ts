@@ -1,6 +1,6 @@
 import {defineType, defineArrayMember} from 'sanity'
-import Title from '../../ui/src/lib/Title'
-import ExternalLinkRenderer from '../../ui/src/lib/ExternalLinkRenderer'
+import Title from '../../../libs/ui/src/lib/Title'
+import ExternalLinkRenderer from '../../../libs/ui/src/lib/ExternalLinkRenderer'
 
 import { UserIcon } from "@sanity/icons"
 

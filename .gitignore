@@ -144,5 +144,8 @@ dist
 .svelte-kit
 
 .nx/
+/.nx
+.nx/**/*
+.nx/*
 
 # End of https://www.toptal.com/developers/gitignore/api/node
