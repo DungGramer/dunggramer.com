@@ -1,4 +1,6 @@
 {
+  "name": "svgtofont",
+  "license": "MIT",
   "scripts": {
     "font": "svgtofont --source ./icons --output ./font --fontname dg"
   },
