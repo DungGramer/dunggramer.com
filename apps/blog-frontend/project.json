@@ -18,6 +18,12 @@
         "production": {}
       }
     },
+    "dev": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["next dev apps/blog-frontend -p 4200"]
+      }
+    },
     "serve": {
       "executor": "@nx/next:server",
       "defaultConfiguration": "development",

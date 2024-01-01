@@ -1,6 +1,6 @@
-import '@mantine/core/styles.css';
-import { MantineProvider } from '@mantine/core';
-import { ColorSchemeScript } from '@mantine/core';
+// import '@mantine/core/styles.css';
+// import { MantineProvider } from '@mantine/core';
+// import { ColorSchemeScript } from '@mantine/core';
 import './global.css';
 
 export const metadata = {
@@ -12,10 +12,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body>
-        <MantineProvider >
-          <ColorSchemeScript />
+        {/* <MantineProvider> */}
+          {/* <ColorSchemeScript /> */}
           {children}
-          </MantineProvider>
+          {/* </MantineProvider> */}
       </body>
     </html>
   );

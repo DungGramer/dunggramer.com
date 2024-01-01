@@ -17,6 +17,9 @@ const nextConfig = {
     NEXT_PUBLIC_SANITY_DATASET: process.env.NEXT_PUBLIC_SANITY_DATASET,
     SANITY_API_READ_TOKEN: process.env.SANITY_API_READ_TOKEN,
   },
+  // compiler: {
+  //   emotion: true
+  // }
 };
 
 const plugins = [
