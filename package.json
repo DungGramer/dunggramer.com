@@ -129,5 +129,6 @@
     "tslib": "^2.3.0",
     "tss-react": "^4.9.3",
     "use-immer": "^0.8.1"
-  }
+  },
+  "packageManager": "yarn@4.0.2"
 }
