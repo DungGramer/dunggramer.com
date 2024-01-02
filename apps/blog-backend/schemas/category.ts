@@ -12,21 +12,21 @@ export default defineType({
     },
     {
       name: 'vietnamese',
-      title: 'Tiếng Việt'
-    }
+      title: 'Tiếng Việt',
+    },
   ],
   fields: [
     defineField({
       name: 'title',
       title: 'Title',
       type: 'string',
-      group: 'english'
+      group: 'english',
     }),
     defineField({
       name: 'title_vi',
       title: 'Title Vietnamese',
       type: 'string',
-      group: 'vietnamese'
+      group: 'vietnamese',
     }),
     defineField({
       name: 'slug',
@@ -42,13 +42,13 @@ export default defineType({
       name: 'meta_description',
       title: 'Meta Description',
       type: 'text',
-      group: 'english'
+      group: 'english',
     }),
     defineField({
       name: 'meta_description_vi',
       title: 'Meta Description Vietnamese',
       type: 'text',
-      group: 'vietnamese'
-    })
+      group: 'vietnamese',
+    }),
   ],
 });

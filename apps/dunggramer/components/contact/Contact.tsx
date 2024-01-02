@@ -49,13 +49,7 @@ const Contact = () => {
     <section className="contact section" id="contact">
       {/* <Hanoi id={'hanoi'} /> */}
       <div className={styles.map}>
-        <Image
-          src="/hanoi.png"
-          id={styles.hanoi}
-          width={741}
-          height={888}
-          alt="Hanoi Map"
-        />
+        <Image src="/hanoi.png" id={styles.hanoi} width={741} height={888} alt="Hanoi Map" />
         <a
           id={styles.location}
           href="https://goo.gl/maps/RR7LLeZRR647BHVN7"
@@ -66,7 +60,9 @@ const Contact = () => {
         </a>
       </div>
       <h2 className="section__title">Get in touch</h2>
-      <span className="section__subtitle">Let me show you how my skills can benefit your project.</span>
+      <span className="section__subtitle">
+        Let me show you how my skills can benefit your project.
+      </span>
 
       <div className={clsx('container grid', styles['contact__container'])}>
         <div className={styles['contact__content']}>
@@ -82,17 +78,8 @@ const Contact = () => {
         <div className={styles['contact__content']}>
           <h3 className={styles['contact__title']}>Contact me</h3>
 
-          <form
-            className={styles['contact__form']}
-            ref={form}
-            onSubmit={sendEmail}
-          >
-            <div
-              className={clsx(
-                styles['contact__form-div'],
-                styles['contact__form-area']
-              )}
-            >
+          <form className={styles['contact__form']} ref={form} onSubmit={sendEmail}>
+            <div className={clsx(styles['contact__form-div'], styles['contact__form-area'])}>
               <label htmlFor="" className={styles['contact__form-tag']}>
                 Content
               </label>

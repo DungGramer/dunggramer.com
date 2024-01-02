@@ -42,6 +42,12 @@
         }
       }
     },
+    "analyze": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "ANALYZE=true next build"
+      }
+    },
     "export": {
       "executor": "@nx/next:export",
       "options": {
@@ -57,7 +63,44 @@
     },
     "lint": {
       "executor": "@nx/eslint:lint",
-      "outputs": ["{options.outputFile}"]
+      "options": {
+        "outputs": ["{options.outputFile}"]
+      }
+    },
+    "typecheck": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "tsc --noEmit"
+      }
+    },
+    "stylelint": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "stylelint '**/*.css' --cache"
+      }
+    },
+    "prettier": {
+      "executor": "nx:run-commands",
+      "configurations": {
+        "check": {
+          "command": "prettier --check \"**/*.{ts,tsx}\""
+        },
+        "write": {
+          "command": "prettier --write \"**/*.{ts,tsx}\""
+        }
+      }
+    },
+    "storybook": {
+      "executor": "nx:run-commands",
+      "defaultConfiguration": "development",
+      "configurations": {
+        "development": {
+          "command": "storybook dev -p 6006"
+        },
+        "production": {
+          "command": "storybook build"
+        }
+      }
     }
   },
   "tags": []

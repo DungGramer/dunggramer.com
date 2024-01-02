@@ -1,4 +1,4 @@
-import {defineField, defineType} from 'sanity'
+import { defineField, defineType } from 'sanity';
 
 export default defineType({
   name: 'tags',
@@ -11,18 +11,18 @@ export default defineType({
       type: 'string',
     }),
     defineField({
-      name: "slug",
-      title: "Slug",
-      type: "slug",
+      name: 'slug',
+      title: 'Slug',
+      type: 'slug',
       options: {
-        source: "title",
+        source: 'title',
         maxLength: 96,
       },
     }),
     defineField({
-      name: "meta_description",
-      title: "Meta Description",
-      type: "text",
+      name: 'meta_description',
+      title: 'Meta Description',
+      type: 'text',
     }),
   ],
-})
+});

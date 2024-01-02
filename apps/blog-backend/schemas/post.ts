@@ -5,7 +5,7 @@ enum GROUPS {
   MEDIA = 'media',
   META = 'meta',
   REFERENCE = 'reference',
-  SERIES = 'series'
+  SERIES = 'series',
 }
 
 export default defineType({

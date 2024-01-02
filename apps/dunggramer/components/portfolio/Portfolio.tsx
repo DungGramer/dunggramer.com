@@ -12,9 +12,7 @@ const Portfolio = () => {
     if (item.name === 'All') {
       setProjects(projectsData);
     } else {
-      const newProjects = projectsData.filter(
-        (project) => project.category === item.name
-        );
+      const newProjects = projectsData.filter((project) => project.category === item.name);
       setProjects(newProjects);
     }
   }, [item]);

@@ -44,8 +44,7 @@ export const projectsData = [
     title: 'PhimPhim',
     category: 'App',
     link: 'https://github.com/DungGramer/phimphim',
-    description:
-      'A app for updated newest movies, suggestions according to your favorite movies',
+    description: 'A app for updated newest movies, suggestions according to your favorite movies',
     tags: ['React Native', 'Expo', 'themoviedb API'],
   },
   {

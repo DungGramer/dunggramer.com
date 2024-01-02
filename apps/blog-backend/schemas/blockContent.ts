@@ -1,8 +1,8 @@
-import {defineType, defineArrayMember} from 'sanity'
-import Title from '../../../libs/ui/src/lib/Title'
-import ExternalLinkRenderer from '../../../libs/ui/src/lib/ExternalLinkRenderer'
+import { defineType, defineArrayMember } from 'sanity';
+import Title from '../../../libs/ui/src/lib/Title';
+import ExternalLinkRenderer from '../../../libs/ui/src/lib/ExternalLinkRenderer';
 
-import { UserIcon } from "@sanity/icons"
+import { UserIcon } from '@sanity/icons';
 
 /**
  * This is the schema definition for the rich text fields used for
@@ -32,35 +32,35 @@ export default defineType({
           value: 'title',
           component: Title,
         },
-        {title: 'Normal', value: 'normal'},
-        {title: 'H1', value: 'h1'},
-        {title: 'H2', value: 'h2'},
-        {title: 'H3', value: 'h3'},
-        {title: 'H4', value: 'h4'},
-        {title: 'H5', value: 'h5'},
-        {title: 'H6', value: 'h6'},
-        {title: 'Quote', value: 'blockquote'},
-        {title: 'Hidden', value: 'blockComment'},
+        { title: 'Normal', value: 'normal' },
+        { title: 'H1', value: 'h1' },
+        { title: 'H2', value: 'h2' },
+        { title: 'H3', value: 'h3' },
+        { title: 'H4', value: 'h4' },
+        { title: 'H5', value: 'h5' },
+        { title: 'H6', value: 'h6' },
+        { title: 'Quote', value: 'blockquote' },
+        { title: 'Hidden', value: 'blockComment' },
       ],
       lists: [
-        {title: 'Bullet', value: 'bullet'},
-        {title: 'Numbered', value: 'number'},
+        { title: 'Bullet', value: 'bullet' },
+        { title: 'Numbered', value: 'number' },
       ],
       // Marks let you mark up inline text in the block editor.
       marks: {
         // Decorators usually describe a single property – e.g. a typographic
         // preference or highlighting by editors.
         decorators: [
-          {title: 'Strong', value: 'strong'},
-          {title: 'Emphasis', value: 'em'},
-          {title: 'Code', value: 'code'},
+          { title: 'Strong', value: 'strong' },
+          { title: 'Emphasis', value: 'em' },
+          { title: 'Code', value: 'code' },
           {
             title: 'Highlight',
             value: 'highlight',
             icon: () => 'H',
           },
-          {title: 'Underline', value: 'underline'},
-          {title: 'Strike', value: 'strike-through'},
+          { title: 'Underline', value: 'underline' },
+          { title: 'Strike', value: 'strike-through' },
         ],
         // Annotations can be any object structure – e.g. a link or a footnote.
         annotations: [
@@ -86,18 +86,18 @@ export default defineType({
     // primitive types such as 'string' and 'number' in the same array
     // as a block type.
     defineArrayMember({
-      type: "image",
+      type: 'image',
       options: { hotspot: true },
       fields: [
         {
-          name: "alt",
-          type: "string",
-          title: "Alternative Text",
+          name: 'alt',
+          type: 'string',
+          title: 'Alternative Text',
         },
       ],
     }),
     {
-      type: 'code'
-    }
+      type: 'code',
+    },
   ],
-})
+});

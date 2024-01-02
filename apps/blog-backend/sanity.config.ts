@@ -1,13 +1,13 @@
-import {defineConfig} from 'sanity'
-import {deskTool} from 'sanity/desk'
-import {visionTool} from '@sanity/vision'
-import {schemaTypes} from './schemas'
-import {codeInput} from '@sanity/code-input'
-import {dashboardTool, projectUsersWidget, projectInfoWidget} from '@sanity/dashboard'
-import { documentInternationalization } from '@sanity/document-internationalization'
-import { media } from 'sanity-plugin-media'
-import { dataset, projectId } from './config'
-import { customFields } from './schemas/customFields'
+import { defineConfig } from 'sanity';
+import { deskTool } from 'sanity/desk';
+import { visionTool } from '@sanity/vision';
+import { schemaTypes } from './schemas';
+import { codeInput } from '@sanity/code-input';
+import { dashboardTool, projectUsersWidget, projectInfoWidget } from '@sanity/dashboard';
+import { documentInternationalization } from '@sanity/document-internationalization';
+import { media } from 'sanity-plugin-media';
+import { dataset, projectId } from './config';
+import { customFields } from './schemas/customFields';
 
 export default defineConfig({
   name: 'default',
@@ -24,7 +24,6 @@ export default defineConfig({
         { id: 'vi', title: 'Vietnamese' },
       ],
       schemaTypes: ['post', 'url', 'series', 'legal', 'about', 'author', 'snippet', 'til'],
-      
     }),
     media(),
     visionTool(),
@@ -37,4 +36,4 @@ export default defineConfig({
   schema: {
     types: [...schemaTypes, ...customFields],
   },
-})
+});

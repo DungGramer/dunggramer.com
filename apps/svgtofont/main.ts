@@ -8,13 +8,13 @@ svgtofont({
   css: true,
   svgicons2svgfont: {
     fontHeight: 1000,
-    normalize: true
+    normalize: true,
   },
   outSVGReact: true,
   website: {
     title: 'DG Icons',
     logo: path.resolve(__dirname, 'icons', 'logo.svg'),
-    version: "1.0",
+    version: '1.0',
     meta: {
       viewport: 'width=device-width, initial-scale=1',
       description: 'Complication of SVG icons I use in my projects.',

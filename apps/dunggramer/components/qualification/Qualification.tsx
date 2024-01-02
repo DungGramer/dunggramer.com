@@ -10,10 +10,7 @@ const Qualification = () => {
   }, []);
 
   return (
-    <section
-      className={clsx('section', styles['qualification'])}
-      id="qualification"
-    >
+    <section className={clsx('section', styles['qualification'])} id="qualification">
       <h2 className="section__title">Qualification</h2>
       <span className="section__subtitle">My personal journey</span>
 
@@ -28,13 +25,9 @@ const Qualification = () => {
               key={index}
             >
               <div
-                className={clsx(
-                  'button--flex',
-                  styles['qualification__button'],
-                  {
-                    [styles['qualification__active']]: toggleState === index,
-                  }
-                )}
+                className={clsx('button--flex', styles['qualification__button'], {
+                  [styles['qualification__active']]: toggleState === index,
+                })}
               >
                 <i className={clsx(item.icon, styles['qualification__icon'])} />
                 {item.title}
@@ -47,8 +40,7 @@ const Qualification = () => {
           {QualificationData.map((item, index) => (
             <div
               className={clsx(styles['qualification__content'], {
-                [styles['qualification__content-active']]:
-                  toggleState === index,
+                [styles['qualification__content-active']]: toggleState === index,
               })}
               key={index}
             >

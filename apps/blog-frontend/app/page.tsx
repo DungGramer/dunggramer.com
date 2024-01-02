@@ -1,10 +1,11 @@
-import styles from './page.module.scss';
+import { Welcome } from '../components/Welcome/Welcome';
+import { ColorSchemeToggle } from '../components/ColorSchemeToggle/ColorSchemeToggle';
 
-export default async function Index() {
-  /*
-   * Replace the elements below with your own.
-   *
-   * Note: The corresponding styles are in the ./index.scss file.
-   */
-  return <div className={styles.page}></div>;
+export default function HomePage() {
+  return (
+    <>
+      <Welcome />
+      <ColorSchemeToggle />
+    </>
+  );
 }

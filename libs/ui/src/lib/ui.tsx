@@ -19,10 +19,7 @@ export function Ui(props: UiProps) {
           <Link to="/">ui/src/lib/ui root</Link>
         </li>
       </ul>
-      <Route
-        path="/"
-        element={<div>This is the ui/src/lib/ui root route.</div>}
-      />
+      <Route path="/" element={<div>This is the ui/src/lib/ui root route.</div>} />
     </StyledUi>
   );
 }

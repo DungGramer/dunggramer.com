@@ -1,5 +1,3 @@
-import { languageField } from "./languageField";
+import { languageField } from './languageField';
 
-export const customFields = [
-  languageField
-]
+export const customFields = [languageField];

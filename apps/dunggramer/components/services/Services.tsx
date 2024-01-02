@@ -99,15 +99,7 @@ const ServicesData = [
   } */
 ];
 
-const ServicesContent = ({
-  title,
-  icon,
-  description,
-  services,
-  toggleState,
-  toggleTab,
-  index,
-}) => {
+const ServicesContent = ({ title, icon, description, services, toggleState, toggleTab, index }) => {
   return (
     <div className={styles['services__content']}>
       <div>
@@ -115,14 +107,9 @@ const ServicesContent = ({
         <h3 className={styles['services__title']}>{title}</h3>
       </div>
 
-      <span
-        className={styles['services__button']}
-        onClick={() => toggleTab(index)}
-      >
+      <span className={styles['services__button']} onClick={() => toggleTab(index)}>
         View More
-        <i
-          className={clsx('dg-arrow-right', styles['services__button-icon'])}
-        />
+        <i className={clsx('dg-arrow-right', styles['services__button-icon'])} />
       </span>
 
       <ServicesModal
@@ -137,14 +124,7 @@ const ServicesContent = ({
   );
 };
 
-const ServicesModal = ({
-  toggleState,
-  services,
-  index,
-  title,
-  description,
-  toggleTab,
-}) => {
+const ServicesModal = ({ toggleState, services, index, title, description, toggleTab }) => {
   return (
     <div
       className={clsx(styles['services__modal'], {

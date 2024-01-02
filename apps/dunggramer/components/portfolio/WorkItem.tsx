@@ -18,8 +18,7 @@ const WorkItem = ({ item }) => {
 
       <h3 className={styles['work__title']}>{item.title}</h3>
       <a href={item?.link} className={styles['work__button']} rel="noreferrer">
-        Explore{' '}
-        <i className={clsx('dg-arrow-right', styles['work__button-icon'])} />
+        Explore <i className={clsx('dg-arrow-right', styles['work__button-icon'])} />
       </a>
       {item?.tags && <Tags tags={item.tags} />}
       {item?.npm_tags && <NPMTags tags={item.npm_tags} />}
