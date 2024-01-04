@@ -10,26 +10,22 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
-    "lib": [
-      "es2017",
-      "dom"
-    ],
+    "lib": ["es2017", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@dunggramer/icons": [
-        "libs/icons/src/index.ts"
-      ],
-      "@dunggramer/ui": [
-        "libs/ui/src/*"
-      ]
+      "@components": ["apps/blog-frontend/components"],
+      "@dunggramer/icons/*": ["libs/icons/src/*"],
+      "@dunggramer/icons": ["libs/icons/src/index.js"],
+      "@dunggramer/ui": ["libs/ui/src/*"],
+      "#tools/*": ["tools/*"],
+      "#apps/*": ["apps/*"],
+      "#libs/*": ["libs/*"],
+      "~/*": ["./*"],
     },
     "allowJs": true,
     "noImplicitAny": false
   },
-  "exclude": [
-    "node_modules",
-    "tmp"
-  ]
+  "exclude": ["**/node_modules", "tmp"]
 }

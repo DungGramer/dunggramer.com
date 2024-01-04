@@ -7,15 +7,16 @@ const config: import('svgtofont').SvgToFontOptions = {
   dist: path.join(__dirname, 'font'),
   fontName: 'dg',
   typescript: true,
-  useCSSVars: true,
   css: {
     cssPath: 'https://icons.dunggramer.com/',
     fontSize: '16px',
   },
-  svgicons2svgfont: {
-    fontHeight: 1000,
-    normalize: true,
-  },
+  // svgicons2svgfont: {
+    // fontHeight: 1000,
+    // normalize: true,
+    // centerHorizontally: true,
+    // centerVertically: true,
+  // },
   outSVGReact: true,
   generateInfoData: true,
   website: {

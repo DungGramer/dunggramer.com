@@ -1,11 +1,11 @@
 @font-face {
   font-family: "dg";
-  src: url('https://icons.dunggramer.com/dg.eot?t=1704375088538'); /* IE9*/
-  src: url('https://icons.dunggramer.com/dg.eot?t=1704375088538#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url("https://icons.dunggramer.com/dg.woff2?t=1704375088538") format("woff2"),
-  url("https://icons.dunggramer.com/dg.woff?t=1704375088538") format("woff"),
-  url('https://icons.dunggramer.com/dg.ttf?t=1704375088538') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('https://icons.dunggramer.com/dg.svg?t=1704375088538#dg') format('svg'); /* iOS 4.1- */
+  src: url('https://icons.dunggramer.com/dg.eot?t=1704387480333'); /* IE9*/
+  src: url('https://icons.dunggramer.com/dg.eot?t=1704387480333#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url("https://icons.dunggramer.com/dg.woff2?t=1704387480333") format("woff2"),
+  url("https://icons.dunggramer.com/dg.woff?t=1704387480333") format("woff"),
+  url('https://icons.dunggramer.com/dg.ttf?t=1704387480333') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('https://icons.dunggramer.com/dg.svg?t=1704387480333#dg') format('svg'); /* iOS 4.1- */
 }
 
 [class^="dg-"], [class*=" dg-"] {

@@ -7,11 +7,15 @@ appName='dunggramer'
 output='fonts'
 
 # Clean up folder if exist
-rm -rf "${LIB_ICONS_PATH}/src/lib/"
+rm -rf "${LIB_ICONS_PATH}/src/"
 
 # Move the folder to the root_dir and subfolder libs and rename to icons
-mv "./font/react/" "./font/lib/" && mv "./font/lib" "${LIB_ICONS_PATH}/src"
+mv "./font/react/" "./font/src/" && mv "./font/src" "${LIB_ICONS_PATH}"
 
+# Move dg.d.ts to libs and rename
+mv "./font/dg.d.ts" "./font/index.d.ts" && mv "./font/index.d.ts" "${LIB_ICONS_PATH}"
+
+#-------------------------------------------------------------------------
 # Set version
 PACKAGE_JSON_PATH="./package.json"
 
@@ -29,7 +33,7 @@ echo "Current version is $CURRENT_VERSION"
 
 # Update to new version
 LIB_ICONS_PACKAGE="${LIB_ICONS_PATH}/package.json"
-sed "s/\"version\": \"$CURRENT_VERSION\"/\"version\": \"$CURRENT_VERSION\"/" "$LIB_ICONS_PACKAGE" > temp.json && mv temp.json "$LIB_ICONS_PACKAGE"
+sed -i "s/\"version\":.*/\"version\": \"$CURRENT_VERSION\",/" "$LIB_ICONS_PACKAGE"
 
 # Confirmation
 echo "Version updated to $CURRENT_VERSION in package.json."
