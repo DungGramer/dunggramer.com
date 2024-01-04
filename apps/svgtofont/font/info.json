@@ -1,0 +1,266 @@
+{
+  "apps": {
+    "encodedCode": "\\ea01",
+    "prefix": "dg",
+    "className": "dg-apps",
+    "unicode": "&#59905;"
+  },
+  "arrow-down-left": {
+    "encodedCode": "\\ea02",
+    "prefix": "dg",
+    "className": "dg-arrow-down-left",
+    "unicode": "&#59906;"
+  },
+  "arrow-down-right": {
+    "encodedCode": "\\ea03",
+    "prefix": "dg",
+    "className": "dg-arrow-down-right",
+    "unicode": "&#59907;"
+  },
+  "arrow-down": {
+    "encodedCode": "\\ea04",
+    "prefix": "dg",
+    "className": "dg-arrow-down",
+    "unicode": "&#59908;"
+  },
+  "arrow-left": {
+    "encodedCode": "\\ea05",
+    "prefix": "dg",
+    "className": "dg-arrow-left",
+    "unicode": "&#59909;"
+  },
+  "arrow-right": {
+    "encodedCode": "\\ea06",
+    "prefix": "dg",
+    "className": "dg-arrow-right",
+    "unicode": "&#59910;"
+  },
+  "arrow-up-left": {
+    "encodedCode": "\\ea07",
+    "prefix": "dg",
+    "className": "dg-arrow-up-left",
+    "unicode": "&#59911;"
+  },
+  "arrow-up-right": {
+    "encodedCode": "\\ea08",
+    "prefix": "dg",
+    "className": "dg-arrow-up-right",
+    "unicode": "&#59912;"
+  },
+  "arrow-up": {
+    "encodedCode": "\\ea09",
+    "prefix": "dg",
+    "className": "dg-arrow-up",
+    "unicode": "&#59913;"
+  },
+  "arrow": {
+    "encodedCode": "\\ea0a",
+    "prefix": "dg",
+    "className": "dg-arrow",
+    "unicode": "&#59914;"
+  },
+  "award": {
+    "encodedCode": "\\ea0b",
+    "prefix": "dg",
+    "className": "dg-award",
+    "unicode": "&#59915;"
+  },
+  "badge-check": {
+    "encodedCode": "\\ea0c",
+    "prefix": "dg",
+    "className": "dg-badge-check",
+    "unicode": "&#59916;"
+  },
+  "brackets-curly": {
+    "encodedCode": "\\ea0d",
+    "prefix": "dg",
+    "className": "dg-brackets-curly",
+    "unicode": "&#59917;"
+  },
+  "briefcase-alt": {
+    "encodedCode": "\\ea0e",
+    "prefix": "dg",
+    "className": "dg-briefcase-alt",
+    "unicode": "&#59918;"
+  },
+  "calendar-alt": {
+    "encodedCode": "\\ea0f",
+    "prefix": "dg",
+    "className": "dg-calendar-alt",
+    "unicode": "&#59919;"
+  },
+  "check-circle": {
+    "encodedCode": "\\ea10",
+    "prefix": "dg",
+    "className": "dg-check-circle",
+    "unicode": "&#59920;"
+  },
+  "ellipsis-h": {
+    "encodedCode": "\\ea11",
+    "prefix": "dg",
+    "className": "dg-ellipsis-h",
+    "unicode": "&#59921;"
+  },
+  "ellipsis-v": {
+    "encodedCode": "\\ea12",
+    "prefix": "dg",
+    "className": "dg-ellipsis-v",
+    "unicode": "&#59922;"
+  },
+  "estate": {
+    "encodedCode": "\\ea13",
+    "prefix": "dg",
+    "className": "dg-estate",
+    "unicode": "&#59923;"
+  },
+  "export": {
+    "encodedCode": "\\ea14",
+    "prefix": "dg",
+    "className": "dg-export",
+    "unicode": "&#59924;"
+  },
+  "facebook-f": {
+    "encodedCode": "\\ea15",
+    "prefix": "dg",
+    "className": "dg-facebook-f",
+    "unicode": "&#59925;"
+  },
+  "facebook": {
+    "encodedCode": "\\ea16",
+    "prefix": "dg",
+    "className": "dg-facebook",
+    "unicode": "&#59926;"
+  },
+  "file-alt": {
+    "encodedCode": "\\ea17",
+    "prefix": "dg",
+    "className": "dg-file-alt",
+    "unicode": "&#59927;"
+  },
+  "files": {
+    "encodedCode": "\\ea18",
+    "prefix": "dg",
+    "className": "dg-files",
+    "unicode": "&#59928;"
+  },
+  "github-alt": {
+    "encodedCode": "\\ea19",
+    "prefix": "dg",
+    "className": "dg-github-alt",
+    "unicode": "&#59929;"
+  },
+  "graduation-cap": {
+    "encodedCode": "\\ea1a",
+    "prefix": "dg",
+    "className": "dg-graduation-cap",
+    "unicode": "&#59930;"
+  },
+  "instagram": {
+    "encodedCode": "\\ea1b",
+    "prefix": "dg",
+    "className": "dg-instagram",
+    "unicode": "&#59931;"
+  },
+  "knowledge-sharing": {
+    "encodedCode": "\\ea1c",
+    "prefix": "dg",
+    "className": "dg-knowledge-sharing",
+    "unicode": "&#59932;"
+  },
+  "linkedin-alt": {
+    "encodedCode": "\\ea1d",
+    "prefix": "dg",
+    "className": "dg-linkedin-alt",
+    "unicode": "&#59933;"
+  },
+  "logo": {
+    "encodedCode": "\\ea1e",
+    "prefix": "dg",
+    "className": "dg-logo",
+    "unicode": "&#59934;"
+  },
+  "magnifying-glass": {
+    "encodedCode": "\\ea1f",
+    "prefix": "dg",
+    "className": "dg-magnifying-glass",
+    "unicode": "&#59935;"
+  },
+  "mail-send": {
+    "encodedCode": "\\ea20",
+    "prefix": "dg",
+    "className": "dg-mail-send",
+    "unicode": "&#59936;"
+  },
+  "message": {
+    "encodedCode": "\\ea21",
+    "prefix": "dg",
+    "className": "dg-message",
+    "unicode": "&#59937;"
+  },
+  "messenger": {
+    "encodedCode": "\\ea22",
+    "prefix": "dg",
+    "className": "dg-messenger",
+    "unicode": "&#59938;"
+  },
+  "phone": {
+    "encodedCode": "\\ea23",
+    "prefix": "dg",
+    "className": "dg-phone",
+    "unicode": "&#59939;"
+  },
+  "scenery": {
+    "encodedCode": "\\ea24",
+    "prefix": "dg",
+    "className": "dg-scenery",
+    "unicode": "&#59940;"
+  },
+  "send": {
+    "encodedCode": "\\ea25",
+    "prefix": "dg",
+    "className": "dg-send",
+    "unicode": "&#59941;"
+  },
+  "support": {
+    "encodedCode": "\\ea26",
+    "prefix": "dg",
+    "className": "dg-support",
+    "unicode": "&#59942;"
+  },
+  "tiktok": {
+    "encodedCode": "\\ea27",
+    "prefix": "dg",
+    "className": "dg-tiktok",
+    "unicode": "&#59943;"
+  },
+  "times": {
+    "encodedCode": "\\ea28",
+    "prefix": "dg",
+    "className": "dg-times",
+    "unicode": "&#59944;"
+  },
+  "top-arrow-to-top": {
+    "encodedCode": "\\ea29",
+    "prefix": "dg",
+    "className": "dg-top-arrow-to-top",
+    "unicode": "&#59945;"
+  },
+  "universal-access": {
+    "encodedCode": "\\ea2a",
+    "prefix": "dg",
+    "className": "dg-universal-access",
+    "unicode": "&#59946;"
+  },
+  "user": {
+    "encodedCode": "\\ea2b",
+    "prefix": "dg",
+    "className": "dg-user",
+    "unicode": "&#59947;"
+  },
+  "web-grid": {
+    "encodedCode": "\\ea2c",
+    "prefix": "dg",
+    "className": "dg-web-grid",
+    "unicode": "&#59948;"
+  }
+}

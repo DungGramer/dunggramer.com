@@ -8,8 +8,15 @@
     "default": {
       "runner": "@nrwl/nx-cloud",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"],
+        "cacheableOperations": ["build"],
         "accessToken": "MDgwYWU1Y2ItMmMyOC00ZjU0LWE0OWItNDg2ODNkZDJjMWFmfHJlYWQtd3JpdGU="
+      }
+    },
+    "vercel": {
+      "runner": "@vercel/remote-nx",
+      "options": {
+        "cacheableOperations": ["build"],
+        "cacheDirectory": "/tmp/nx-cache"
       }
     }
   },

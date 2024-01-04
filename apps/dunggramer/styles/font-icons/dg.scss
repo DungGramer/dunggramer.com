@@ -1,14 +1,7 @@
-@font-face {font-family: "dg";
-  src: url('https://icons.dunggramer.com/dg.eot?t=1704375088538'); /* IE9*/
-  src: url('https://icons.dunggramer.com/dg.eot?t=1704375088538#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url("https://icons.dunggramer.com/dg.woff2?t=1704375088538") format("woff2"),
-  url("https://icons.dunggramer.com/dg.woff?t=1704375088538") format("woff"),
-  url('https://icons.dunggramer.com/dg.ttf?t=1704375088538') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('https://icons.dunggramer.com/dg.svg?t=1704375088538#dg') format('svg'); /* iOS 4.1- */
-}
 
 [class^="dg-"], [class*=" dg-"] {
-  font-family: 'dg' !important;font-size: 16px;
+  font-family: 'dg' !important;
+  font-size: 16px;
   font-style:normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -58,3 +51,49 @@
 .dg-universal-access:before { content: "\ea2a"; }
 .dg-user:before { content: "\ea2b"; }
 .dg-web-grid:before { content: "\ea2c"; }
+
+$dg-apps: "\ea01";
+$dg-arrow-down-left: "\ea02";
+$dg-arrow-down-right: "\ea03";
+$dg-arrow-down: "\ea04";
+$dg-arrow-left: "\ea05";
+$dg-arrow-right: "\ea06";
+$dg-arrow-up-left: "\ea07";
+$dg-arrow-up-right: "\ea08";
+$dg-arrow-up: "\ea09";
+$dg-arrow: "\ea0a";
+$dg-award: "\ea0b";
+$dg-badge-check: "\ea0c";
+$dg-brackets-curly: "\ea0d";
+$dg-briefcase-alt: "\ea0e";
+$dg-calendar-alt: "\ea0f";
+$dg-check-circle: "\ea10";
+$dg-ellipsis-h: "\ea11";
+$dg-ellipsis-v: "\ea12";
+$dg-estate: "\ea13";
+$dg-export: "\ea14";
+$dg-facebook-f: "\ea15";
+$dg-facebook: "\ea16";
+$dg-file-alt: "\ea17";
+$dg-files: "\ea18";
+$dg-github-alt: "\ea19";
+$dg-graduation-cap: "\ea1a";
+$dg-instagram: "\ea1b";
+$dg-knowledge-sharing: "\ea1c";
+$dg-linkedin-alt: "\ea1d";
+$dg-logo: "\ea1e";
+$dg-magnifying-glass: "\ea1f";
+$dg-mail-send: "\ea20";
+$dg-message: "\ea21";
+$dg-messenger: "\ea22";
+$dg-phone: "\ea23";
+$dg-scenery: "\ea24";
+$dg-send: "\ea25";
+$dg-support: "\ea26";
+$dg-tiktok: "\ea27";
+$dg-times: "\ea28";
+$dg-top-arrow-to-top: "\ea29";
+$dg-universal-access: "\ea2a";
+$dg-user: "\ea2b";
+$dg-web-grid: "\ea2c";
+

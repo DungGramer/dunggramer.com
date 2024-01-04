@@ -1,8 +1,5 @@
-import '@mantine/core/styles.css';
-import React from 'react';
-import { MantineProvider, ColorSchemeScript } from '@mantine/core';
-import { ChakraProvider } from '@chakra-ui/react';
-import { theme } from '../theme';
+import { CharkaConfigProvider } from '@components/Providers/CharkaConfigProvider';
+import 'libs/styles/main.scss';
 
 export const metadata = {
   title: 'Mantine Next.js template',
@@ -13,7 +10,6 @@ export default function RootLayout({ children }: { children: any }) {
   return (
     <html lang="en">
       <head>
-        <ColorSchemeScript />
         <link rel="shortcut icon" href="/favicon.svg" />
         <meta
           name="viewport"
@@ -21,9 +17,7 @@ export default function RootLayout({ children }: { children: any }) {
         />
       </head>
       <body>
-        <ChakraProvider>
-          <MantineProvider theme={theme}>{children}</MantineProvider>
-        </ChakraProvider>
+        <CharkaConfigProvider>{children}</CharkaConfigProvider>
       </body>
     </html>
   );
