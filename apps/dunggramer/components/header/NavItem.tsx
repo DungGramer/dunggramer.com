@@ -7,7 +7,6 @@ const NavItem = ({ href, icon, title, activeNav, setActiveNav }) => {
   const handleClick = useCallback(() => {
     setActiveNav(href);
   }, [href, setActiveNav]);
-  
 
   return (
     <li className="nav__item">

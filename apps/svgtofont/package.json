@@ -1,10 +1,5 @@
 {
-  "scripts": {
-    "font": "svgtofont --source ./icons --output ./font --fontname dg"
-  },
-  "svgtofont": {
-    "css": {
-      "fontSize": "16px"
-    }
-  }
+  "name": "svgtofont",
+  "version": "1.1.0",
+  "license": "MIT"
 }

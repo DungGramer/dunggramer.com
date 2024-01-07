@@ -1,4 +1,4 @@
-import {defineField, defineType} from 'sanity'
+import { defineField, defineType } from 'sanity';
 
 export default defineType({
   name: 'author',
@@ -10,6 +10,7 @@ export default defineType({
       title: 'Name',
       type: 'string',
     }),
+
     defineField({
       name: 'slug',
       title: 'Slug',
@@ -20,25 +21,70 @@ export default defineType({
       },
     }),
     defineField({
+      name: 'designation',
+      title: 'Designation',
+      type: 'string',
+    }),
+    defineField({
+      name: 'meta_description',
+      title: 'Meta Description',
+      type: 'text',
+    }),
+    defineField({
+      name: 'profiles',
+      title: 'Profiles',
+      type: 'array',
+      of: [
+        {
+          type: 'object', // This specifies the type of values in the array
+          fields: [
+            {
+              name: 'platform',
+              type: 'string',
+              title: 'Platform',
+            },
+            {
+              name: 'url',
+              type: 'url',
+              title: 'URL',
+            },
+            {
+              name: `username`,
+              title: `Username`,
+              type: `string`,
+            },
+          ],
+        },
+      ],
+    }),
+    defineField({
+      name: 'bio',
+      title: 'Bio',
+      type: 'text',
+    }),
+    defineField({
       name: 'image',
       title: 'Image',
       type: 'image',
       options: {
         hotspot: true,
       },
-    }),
-    defineField({
-      name: 'bio',
-      title: 'Bio',
-      type: 'array',
-      of: [
+      fields: [
         {
-          title: 'Block',
-          type: 'block',
-          styles: [{title: 'Normal', value: 'normal'}],
-          lists: [],
+          name: 'alt',
+          type: 'string',
+          title: 'Alternative Text',
         },
       ],
+    }),
+    defineField({
+      name: 'about',
+      title: 'Full About',
+      type: 'blockContent',
+    }),
+    defineField({
+      type: `language`,
+      name: `language`,
     }),
   ],
   preview: {
@@ -47,4 +93,4 @@ export default defineType({
       media: 'image',
     },
   },
-})
+});

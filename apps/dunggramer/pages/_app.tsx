@@ -10,7 +10,7 @@ function CustomApp({ Component, pageProps }: AppProps) {
       <Head>
         <title>Dunggramer - Frontend Developer</title>
       </Head>
-        <Component {...pageProps} />
+      <Component {...pageProps} />
     </>
   );
 }

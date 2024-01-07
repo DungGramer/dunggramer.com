@@ -5,11 +5,10 @@
   "projectType": "application",
   "targets": {
     "build": {
-      "executor": "@nrwl/next:build",
+      "executor": "@nx/next:build",
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
-        "root": "apps/blog-frontend",
         "outputPath": "dist/apps/blog-frontend"
       },
       "configurations": {
@@ -19,8 +18,14 @@
         "production": {}
       }
     },
+    "dev": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["next dev apps/blog-frontend -p 4200"]
+      }
+    },
     "serve": {
-      "executor": "@nrwl/next:server",
+      "executor": "@nx/next:server",
       "defaultConfiguration": "development",
       "options": {
         "buildTarget": "blog-frontend:build",
@@ -37,31 +42,64 @@
         }
       }
     },
+    "analyze": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "ANALYZE=true next build"
+      }
+    },
     "export": {
-      "executor": "@nrwl/next:export",
+      "executor": "@nx/next:export",
       "options": {
         "buildTarget": "blog-frontend:build:production"
       }
     },
     "test": {
-      "executor": "@nrwl/jest:jest",
+      "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "apps/blog-frontend/jest.config.ts",
-        "passWithNoTests": true
-      },
-      "configurations": {
-        "ci": {
-          "ci": true,
-          "codeCoverage": true
-        }
+        "jestConfig": "apps/blog-frontend/jest.config.ts"
       }
     },
     "lint": {
-      "executor": "@nrwl/linter:eslint",
-      "outputs": ["{options.outputFile}"],
+      "executor": "@nx/eslint:lint",
       "options": {
-        "lintFilePatterns": ["apps/blog-frontend/**/*.{ts,tsx,js,jsx}"]
+        "outputs": ["{options.outputFile}"]
+      }
+    },
+    "typecheck": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "tsc --noEmit"
+      }
+    },
+    "stylelint": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "stylelint '**/*.css' --cache"
+      }
+    },
+    "prettier": {
+      "executor": "nx:run-commands",
+      "configurations": {
+        "check": {
+          "command": "prettier --check \"**/*.{ts,tsx}\""
+        },
+        "write": {
+          "command": "prettier --write \"**/*.{ts,tsx}\""
+        }
+      }
+    },
+    "storybook": {
+      "executor": "nx:run-commands",
+      "defaultConfiguration": "development",
+      "configurations": {
+        "development": {
+          "command": "storybook dev -p 6006"
+        },
+        "production": {
+          "command": "storybook build"
+        }
       }
     }
   },

@@ -114,7 +114,7 @@ const NavList = [
     href: 'https://blog.dunggramer.com',
     icon: 'blog',
     title: 'Blog',
-  }
+  },
 ];
 
 export default Header;

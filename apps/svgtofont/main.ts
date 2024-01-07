@@ -1,28 +1,56 @@
 const svgtofont = require('svgtofont');
 const path = require('path');
+const pkg = require('./package.json');
 
-svgtofont({
+const config: import('svgtofont').SvgToFontOptions = {
   src: path.join(__dirname, 'icons'),
   dist: path.join(__dirname, 'font'),
   fontName: 'dg',
-  css: true,
-  svgicons2svgfont: {
-    fontHeight: 1000,
-    normalize: true
+  typescript: true,
+  css: {
+    cssPath: 'https://icons.dunggramer.com/',
+    fontSize: '16px',
   },
+  // svgicons2svgfont: {
+    // fontHeight: 1000,
+    // normalize: true,
+    // centerHorizontally: true,
+    // centerVertically: true,
+  // },
   outSVGReact: true,
+  generateInfoData: true,
   website: {
     title: 'DG Icons',
     logo: path.resolve(__dirname, 'icons', 'logo.svg'),
-    version: "1.0",
+    version: pkg.version,
     meta: {
-      viewport: 'width=device-width, initial-scale=1',
       description: 'Complication of SVG icons I use in my projects.',
       keywords: 'svgtofont,TTF,EOT,WOFF,WOFF2,SVG',
     },
     description: 'Complication of SVG icons I use in my projects.',
+    links: [
+      {
+        title: 'GitHub',
+        url: 'https://github.com/DungGramer/dunggramer.com/tree/master/libs/icons',
+      },
+      {
+        title: 'Font Class',
+        url: 'index.html',
+      },
+      {
+        title: 'Unicode',
+        url: 'unicode.html',
+      },
+      {
+        title: 'Symbol',
+        url: 'symbol.html',
+      },
+      {
+        title: 'Source Map',
+        url: 'info.json',
+      },
+    ],
   },
-  footerInfo: 'Licensed under the MIT License.',
-}).then(() => {
-  console.log('done');
-});
+};
+
+svgtofont(config);

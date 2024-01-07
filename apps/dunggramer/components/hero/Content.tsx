@@ -8,8 +8,8 @@ const Content = () => {
         {Data.title}
         <Hand />
       </h1>
-      <h3 className={styles["home__subtitle"]}>{Data.subtitle}</h3>
-      <p className={styles["home__description"]}>{Data.description}</p>
+      <h3 className={styles['home__subtitle']}>{Data.subtitle}</h3>
+      <p className={styles['home__description']}>{Data.description}</p>
 
       <a href="#contact" className="button button--flex">
         {Data.button}

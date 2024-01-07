@@ -7,15 +7,16 @@
     "build": {
       "executor": "nx:run-commands",
       "options": {
-        "commands": [
-          {
-            "command": "npx ts-node apps/svgtofont/main.ts"
-          },
-          {
-            "command": "sh apps/svgtofont/move-folder.sh"
-          }
-        ],
-        "parallel": false
+        "command": "npx ts-node main.ts",
+        "parallel": false,
+        "cwd": "apps/svgtofont"
+      }
+    },
+    "move": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "sh move-folder.sh",
+        "cwd": "apps/svgtofont"
       }
     },
     "serve": {
@@ -33,7 +34,7 @@
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/svgtofont/**/*.ts"]
+        "lintFilePatterns": ["apps/svgtofont/**/*.js"]
       }
     }
   },

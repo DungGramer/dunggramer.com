@@ -30,12 +30,7 @@ const SocialData = [
 
 const SocialChild = ({ link, icon }) => {
   return (
-    <a
-      href={link}
-      className={styles['home__social-icon']}
-      target="_blank"
-      rel="noreferrer"
-    >
+    <a href={link} className={styles['home__social-icon']} target="_blank" rel="noreferrer">
       <i className={icon} />
     </a>
   );
