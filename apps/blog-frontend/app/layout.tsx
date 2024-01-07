@@ -1,9 +1,10 @@
 import 'libs/styles/main.scss';
 import { ReactNode } from 'react';
 import { CharkaConfigProvider } from '../components/Providers/Charka/CharkaConfigProvider';
+import { ColorModeScript } from '@chakra-ui/react';
 
 export const metadata = {
-  title: 'Mantine Next.js template',
+  title: 'DungGramer Blog',
   description: 'I am using Mantine with Next.js!',
 };
 
@@ -24,6 +25,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         />
       </head>
       <body>
+        <ColorModeScript />
         <CharkaConfigProvider>{children}</CharkaConfigProvider>
       </body>
     </html>
