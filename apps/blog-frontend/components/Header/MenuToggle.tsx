@@ -7,9 +7,9 @@ const MenuToggle = ({ toggle, isOpen }) => {
     <Box
       display={{ base: 'block', md: 'none' }}
       onClick={toggle}
-      color="red"
-      fontSize={30}
+      fontSize={24}
       cursor={'pointer'}
+      color={'white'}
     >
       {isOpen ? <FontAwesomeIcon icon={faTimes} /> : <FontAwesomeIcon icon={faBars} />}
     </Box>

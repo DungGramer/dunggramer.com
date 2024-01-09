@@ -1,6 +1,6 @@
 'use client';
 
-import { Box, Flex } from '@chakra-ui/react';
+import { Box, Flex, Spacer } from '@chakra-ui/react';
 import { Logo } from '@dunggramer/icons/Logo';
 import { useState } from 'react';
 import MenuToggle from './MenuToggle';
@@ -20,11 +20,13 @@ const Header = () => {
       w="100%"
       mb={8}
       p={8}
-      // bg={['primary.500', 'primary.500', 'transparent', 'transparent']}
+      bg={['primary.500', 'primary.500', 'transparent', 'transparent']}
+      color={['white', 'white', 'primary.700', 'primary.700']}
     >
-      <Box color={['red']}>
+      <Box color={['white', 'white', 'primary.500', 'primary.500']}>
         <Logo width={50} height={50} fill="currentColor" />
       </Box>
+      <Spacer />
       <MenuToggle toggle={toggle} isOpen={isOpen} />
       <MenuLinks isOpen={isOpen} />
     </Flex>

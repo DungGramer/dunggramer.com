@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import React from 'react';
 import { Stack, Button, Box } from '@chakra-ui/react';
@@ -21,10 +21,12 @@ export default function MenuLinks({ isOpen }) {
         <MenuItem to="/how">How It works </MenuItem>
         <MenuItem to="/faetures">Features </MenuItem>
         <MenuItem to="/pricing">Pricing </MenuItem>
-        <MenuItem to="/signup" isLast>
+        <MenuItem to="/signup">
           <Button
             size="sm"
             rounded="md"
+            color={['primary.500', 'primary.500', 'white', 'white']}
+            bg={['white', 'white', 'primary.500', 'primary.500']}
             _hover={{
               bg: ['primary.100', 'primary.100', 'primary.600', 'primary.600'],
             }}

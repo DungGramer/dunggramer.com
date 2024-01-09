@@ -1,10 +1,22 @@
 import { defineCliConfig } from 'sanity/cli';
-const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID;
-const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET;
+import { projectId, dataset } from './environment';
 
 export default defineCliConfig({
+  graphql: [
+    {
+      tag: 'v1',
+      workspace: 'production-workspace',
+    },
+  ],
   api: {
     projectId,
     dataset,
+  },
+  vite: {
+    resolve: {
+      alias: {
+        '@': __dirname,
+      },
+    },
   },
 });

@@ -1,6 +1,6 @@
 {
   "name": "dunggramer",
-  "version": "independent",
+  "version": "1.0.0",
   "license": "MIT",
   "scripts": {
     "start:next": "yarn nx serve dunggramer --port 3000"

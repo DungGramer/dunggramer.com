@@ -1,20 +1,25 @@
-import { defineConfig } from 'sanity';
-import { deskTool } from 'sanity/desk';
-import { visionTool } from '@sanity/vision';
-import { schemaTypes } from './schemas';
 import { codeInput } from '@sanity/code-input';
-import { dashboardTool, projectUsersWidget, projectInfoWidget } from '@sanity/dashboard';
+import { dashboardTool, projectInfoWidget, projectUsersWidget } from '@sanity/dashboard';
 import { documentInternationalization } from '@sanity/document-internationalization';
+import { RobotIcon, RocketIcon } from '@sanity/icons';
+import { visionTool } from '@sanity/vision';
+import { defineConfig } from 'sanity';
 import { media } from 'sanity-plugin-media';
-import { dataset, projectId } from './config';
+import { deskTool } from 'sanity/desk';
+import { dataset, projectId } from './environment';
+import { schemaTypes } from './schemas';
 import { customFields } from './schemas/customFields';
 
-export default defineConfig({
-  name: 'default',
+const types = [...schemaTypes, ...customFields];
+
+const config = {
   title: 'blog.dunggramer.com',
 
   projectId,
   dataset,
+  schema: {
+    types,
+  },
 
   plugins: [
     deskTool(),
@@ -23,7 +28,9 @@ export default defineConfig({
         { id: 'en', title: 'English' },
         { id: 'vi', title: 'Vietnamese' },
       ],
+      bulkPublish: true,
       schemaTypes: ['post', 'url', 'series', 'legal', 'about', 'author', 'snippet', 'til'],
+      // schemaTypes: ['post', 'url']
     }),
     media(),
     visionTool(),
@@ -32,8 +39,23 @@ export default defineConfig({
       widgets: [projectInfoWidget(), projectUsersWidget()],
     }),
   ],
+};
 
-  schema: {
-    types: [...schemaTypes, ...customFields],
+export default defineConfig([
+  {
+    ...config,
+    basePath: '/production',
+    dataset: 'production',
+    name: 'production-workspace',
+    title: 'Production',
+    icon: RocketIcon,
   },
-});
+  {
+    ...config,
+    basePath: '/development',
+    dataset: 'development',
+    name: 'development-workspace',
+    title: 'Development',
+    icon: RobotIcon,
+  },
+]);
