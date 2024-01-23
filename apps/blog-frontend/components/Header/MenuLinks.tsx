@@ -4,6 +4,13 @@ import React from 'react';
 import { Stack, Button, Box } from '@chakra-ui/react';
 import MenuItem from './MenuItem';
 
+const menuItems = [
+  { to: '/category', label: 'Category' },
+  { to: '/tags', label: 'Tags' },
+  { to: '/snippet', label: 'Snippet' },
+  { to: '/til', label: 'Today I Learned' },
+];
+
 export default function MenuLinks({ isOpen }) {
   return (
     <Box
@@ -17,11 +24,10 @@ export default function MenuLinks({ isOpen }) {
         direction={['column', 'row', 'row', 'row']}
         pt={[4, 4, 0, 0]}
       >
-        <MenuItem to="/">Home</MenuItem>
-        <MenuItem to="/how">How It works </MenuItem>
-        <MenuItem to="/faetures">Features </MenuItem>
-        <MenuItem to="/pricing">Pricing </MenuItem>
-        <MenuItem to="/signup">
+        {menuItems.map((item) => (
+          <MenuItem to={item.to} key={item.to}>{item.label}</MenuItem>
+        ))}
+        {/* <MenuItem to="/signup">
           <Button
             size="sm"
             rounded="md"
@@ -34,7 +40,7 @@ export default function MenuLinks({ isOpen }) {
           >
             Create Account
           </Button>
-        </MenuItem>
+        </MenuItem> */}
       </Stack>
     </Box>
   );

@@ -1,13 +1,14 @@
 'use client';
 
-import { extendTheme } from '@chakra-ui/react';
+import { StyleFunctionProps, extendTheme } from '@chakra-ui/react';
 import colors from './colors';
 import fonts from './fonts';
+import { mode } from '@chakra-ui/theme-tools';
 
 const theme = extendTheme(
   {
     styles: {
-      global: {
+      global: (props: StyleFunctionProps) => ({
         html: {
           scrollBehavior: 'smooth',
           height: '-webkit-fill-available',
@@ -17,14 +18,14 @@ const theme = extendTheme(
           color: 'white',
         },
         body: {
-          backgroundColor: 'white',
+          bg: mode(colors.background.light, colors.background.dark)(props),
           color: 'black',
           overflowX: 'hidden',
         },
         'b, strong': {
           fontWeight: 'extrabold',
         },
-      },
+      }),
     },
 
     colors,

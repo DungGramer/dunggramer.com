@@ -24,7 +24,7 @@ const Header = () => {
       color={['white', 'white', 'primary.700', 'primary.700']}
     >
       <Box color={['white', 'white', 'primary.500', 'primary.500']}>
-        <Logo width={50} height={50} fill="currentColor" />
+        {/* <Logo width={50} height={50} fill="currentColor" /> */}
       </Box>
       <Spacer />
       <MenuToggle toggle={toggle} isOpen={isOpen} />
