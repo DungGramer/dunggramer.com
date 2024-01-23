@@ -1,34 +1,25 @@
 'use client';
 
-import { StyleFunctionProps, extendTheme } from '@chakra-ui/react';
+import { extendTheme } from '@chakra-ui/react';
 import colors from './colors';
+import * as components from './components';
 import fonts from './fonts';
-import { mode } from '@chakra-ui/theme-tools';
+import sizes from './sizes';
+import space from './space';
+import styles from './styles';
+import tokens from './tokens';
+import textStyles from './text-styles';
 
 const theme = extendTheme(
   {
-    styles: {
-      global: (props: StyleFunctionProps) => ({
-        html: {
-          scrollBehavior: 'smooth',
-          height: '-webkit-fill-available',
-        },
-        '::selection': {
-          backgroundColor: 'selection',
-          color: 'white',
-        },
-        body: {
-          bg: mode(colors.background.light, colors.background.dark)(props),
-          color: 'black',
-          overflowX: 'hidden',
-        },
-        'b, strong': {
-          fontWeight: 'extrabold',
-        },
-      }),
-    },
-
+    styles,
     colors,
+    fonts,
+    textStyles,
+    sizes,
+    space,
+    semanticTokens: tokens,
+    components: { ...components },
 
     // breakpoints: {
     //   base: '0px',
@@ -52,8 +43,6 @@ const theme = extendTheme(
     //     '3xl': '1820px',
     //   },
     // },
-
-    fonts,
   }
   // withDefaultColorScheme({
   //   colorScheme: 'primary',

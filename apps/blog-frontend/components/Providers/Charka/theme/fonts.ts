@@ -1,12 +1,18 @@
 import { Inter } from 'next/font/google';
+import { Spline_Sans } from 'next/font/google';
 
 export const inter = Inter({
   subsets: ['cyrillic'],
   display: 'swap',
 });
 
+export const spline_sans = Spline_Sans({
+  subsets: ['latin'],
+  display: 'swap',
+});
+
 const fonts = {
-  heading: `${inter.style.fontFamily},  -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";`,
+  heading: `${spline_sans.style.fontFamily},  -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";`,
   body: `${inter.style.fontFamily},  -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";`,
   inter: inter.style.fontFamily,
 

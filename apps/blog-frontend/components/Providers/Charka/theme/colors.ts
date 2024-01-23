@@ -29,7 +29,7 @@ const colors = {
     active: '#27ad6b',
     focus: '#54e595',
     loading: '#4ade80',
-    disabled: '#a5d6a7'
+    disabled: '#a5d6a7',
   },
   error: {
     default: '#dc3545',
@@ -37,7 +37,7 @@ const colors = {
     active: '#cd2535',
     focus: '#f56565',
     loading: '#f56565',
-    disabled: '#a82535'
+    disabled: '#a82535',
   },
   warning: {
     default: '#ff9900',
@@ -45,7 +45,7 @@ const colors = {
     active: '#e58e00',
     focus: '#ffb74d',
     loading: '#ffa500',
-    disabled: '#d58512'
+    disabled: '#d58512',
   },
   info: {
     default: '#007bff',
@@ -53,10 +53,8 @@ const colors = {
     active: '#006de5',
     focus: '#1e90ff',
     loading: '#007bff',
-    disabled: '#75a5ff'
+    disabled: '#75a5ff',
   },
-
-
 
   // #C39A74
   primary: {
@@ -93,7 +91,7 @@ const colors = {
       300: '#8e857e',
       200: '#87837f',
       100: '#808080',
-    }
+    },
   },
 
   // #749dc3
@@ -131,7 +129,7 @@ const colors = {
       300: '#747b8b',
       200: '#7a7d86',
       100: '#808080',
-    }
+    },
   },
 
   // #268651
@@ -169,7 +167,7 @@ const colors = {
       300: '#728277',
       200: '#79817b',
       100: '#808080',
-    }
+    },
   },
 
   accents: {
@@ -193,7 +191,7 @@ const colors = {
       default: '#ffffff',
       inactive: '#eeeeee',
       disabled: '#cccccc',
-    } 
+    },
   },
 
   // 避免和 white 冲突， black也是同理
@@ -280,6 +278,12 @@ const colors = {
     700: '#E43E12',
     800: '#D6370E',
     900: '#BD2905',
+  },
+
+  gray: {
+    25: '#fcfdfe',
+    50: '#f4f8fa',
+    950: '#14151e',
   },
 };
 
