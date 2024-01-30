@@ -19,10 +19,10 @@ export default {
       borderColor: 'border.default',
     },
     body: {
-      // bg: mode(colors.background.light, colors.background.dark)(props),
-      // color: 'black',
-      color: 'fg.default',
-      bg: 'bg.canvas',
+      bg: mode(colors.background.light, colors.background.dark)(props),
+      color: '#333333',
+      // color: 'fg.default',
+      // bg: 'bg.canvas',
       overflowX: 'hidden',
     },
     'b, strong': {

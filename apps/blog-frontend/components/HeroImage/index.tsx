@@ -16,7 +16,7 @@ import { posts } from './data'
 
 export const HeroImage = () => (
   <Box bg="bg.surface">
-    <Box bg="bg.accent.default" color="fg.accent.default">
+    <Box bg="primary.500" color="fg.accent.default">
       <Container pt={{ base: '16', md: '24' }} pb={{ base: '32', md: '48' }}>
         <Stack spacing={{ base: '8', md: '10' }} align="center">
           <Stack spacing={{ base: '4', md: '6' }} textAlign="center">

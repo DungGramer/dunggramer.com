@@ -21,28 +21,28 @@ const variants = {
   outline: definePartsStyle((props) => ({
     field: {
       borderRadius: 'lg',
-      borderColor: 'border.emphasized',
+      borderColor: 'border.base',
       bg: vars.bg.reference,
       [vars.bg.variable]: `white`,
       _dark: {
         [vars.bg.variable]: `gray.800`,
       },
       _hover: {
-        borderColor: 'border.active',
+        borderColor: 'border.strong',
       },
       _focusVisible: {
         zIndex: 1,
-        borderColor: 'brand.500',
-        // boxShadow: `0 0 0 1px ${props.theme.colors[props.colorScheme]['500']}`,
+        borderColor: 'border.base',
+        boxShadow: `0 0 0 1px ${props.theme.colors[props.colorScheme]}`,
         _dark: {
-          borderColor: 'brand.200',
-          // boxShadow: `0 0 0 1px ${props.theme.colors[props.colorScheme]['200']}`,
+          borderColor: 'border.strong',
+          boxShadow: `0 0 0 1px ${props.theme.colors[props.colorScheme]}`,
         },
       },
     },
     addon: {
       borderRadius: 'lg',
-      borderColor: 'border.emphasized',
+      borderColor: 'border.base',
       bg: 'bg.subtle',
     },
   })),
@@ -51,7 +51,7 @@ const variants = {
     field: {
       bg: 'bg.accent.subtle',
       borderWidth: '2px',
-      borderColor: 'transparent',
+      borderColor: 'border.base',
       borderRadius: 'lg',
       color: 'fg.accent.default',
       _placeholder: {

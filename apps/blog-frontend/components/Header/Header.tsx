@@ -18,13 +18,17 @@ const Header = () => {
       as="nav"
       wrap="wrap"
       w="100%"
-      mb={8}
-      p={8}
-      bg={['primary.500', 'primary.500', 'transparent', 'transparent']}
+      // mb={8}
+      py={4}
+      px={8}
+      bg={['primary.500', 'primary.500', 'white', 'white']}
       color={['white', 'white', 'primary.700', 'primary.700']}
+      position={'sticky'}
+      top={0}
+      zIndex={100}
     >
       <Box color={['white', 'white', 'primary.500', 'primary.500']}>
-        {/* <Logo width={50} height={50} fill="currentColor" /> */}
+        <Logo width={50} height={50} fill="currentColor" />
       </Box>
       <Spacer />
       <MenuToggle toggle={toggle} isOpen={isOpen} />
