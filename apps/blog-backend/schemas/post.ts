@@ -104,6 +104,11 @@ export default defineType({
       },
       fields: [
         {
+          name: 'URL',
+          type: 'string',
+          title: 'URL',
+        },
+        {
           name: 'alt',
           type: 'string',
           title: 'Alternative Text',

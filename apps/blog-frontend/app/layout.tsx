@@ -2,6 +2,7 @@ import 'libs/styles/main.scss';
 import { ReactNode } from 'react';
 import { CharkaConfigProvider } from '../components/Providers/Charka/CharkaConfigProvider';
 import { ColorModeScript } from '@chakra-ui/react';
+import { client } from '#blog-frontend/sanity/client';
 
 export const metadata = {
   title: 'DungGramer Blog',
@@ -22,6 +23,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           rel="stylesheet preload"
           href="https://icons.dunggramer.com/dg.css"
           crossOrigin="anonymous"
+          as="style"
         />
       </head>
       <body>

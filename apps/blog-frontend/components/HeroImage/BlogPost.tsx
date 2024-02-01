@@ -1,14 +1,13 @@
-import { Badge, Box, Heading, HStack, Icon, Image, Link, Stack, Text } from '@chakra-ui/react'
-import { VscCircleFilled } from 'react-icons/vsc'
-import { Post } from './data'
+import { Badge, Box, Heading, HStack, Image, Link, Stack, Text } from '@chakra-ui/react';
+import { Post } from './data';
 
 interface BlogPostProps {
-  isHero?: boolean
-  post: Post
+  isHero?: boolean;
+  post: Post;
 }
 
 export const BlogPost = (props: BlogPostProps) => {
-  const { post, isHero } = props
+  const { post, isHero } = props;
   return (
     <Link _hover={{ textDecor: 'none' }} role="group">
       <Stack spacing="8">
@@ -43,5 +42,5 @@ export const BlogPost = (props: BlogPostProps) => {
         </Stack>
       </Stack>
     </Link>
-  )
-}
+  );
+};

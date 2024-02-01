@@ -3,7 +3,8 @@ import { dashboardTool, projectInfoWidget, projectUsersWidget } from '@sanity/da
 import { documentInternationalization } from '@sanity/document-internationalization';
 import { RobotIcon, RocketIcon } from '@sanity/icons';
 import { visionTool } from '@sanity/vision';
-import { defineConfig } from 'sanity';
+import { Config, defineConfig } from 'sanity';
+import { unsplashImageAsset } from 'sanity-plugin-asset-source-unsplash';
 import { media } from 'sanity-plugin-media';
 import { deskTool } from 'sanity/desk';
 import { dataset, projectId } from './environment';
@@ -12,7 +13,7 @@ import { customFields } from './schemas/customFields';
 
 const types = [...schemaTypes, ...customFields];
 
-const config = {
+const config: Config = {
   title: 'blog.dunggramer.com',
 
   projectId,
@@ -33,6 +34,7 @@ const config = {
       // schemaTypes: ['post', 'url']
     }),
     media(),
+    unsplashImageAsset(),
     visionTool(),
     codeInput(),
     dashboardTool({
